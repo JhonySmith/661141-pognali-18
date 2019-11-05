@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Евгений Веснин](https://up.htmlacademy.ru/adaptive/18/user/661141).
-* Наставник: `Неизвестно`.
+- Студент: [Евгений Веснин](https://up.htmlacademy.ru/adaptive/18/user/661141).
+- Наставник: [Антон Шабельников](https://up.htmlacademy.ru/adaptive/18/user/292541).
 
 ---
 
