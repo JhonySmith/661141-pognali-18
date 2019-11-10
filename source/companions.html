@@ -16,7 +16,73 @@
     </nav>
     <h1 class="page-header__title">Попутчики</h1>
   </header>
+
   <main class="page-main">
+    <section class="companion-country-filters">
+      <h2 class="companion-country-filters__title section-title">Фильтрация по странам</h2>
+      <button>Кнопка</button>
+    </section>
+
+    <section class="companion-filters">
+      <h2 class="companion-filters__title section-title">Подбери идеального попутчика</h2>
+      <form action="" class="companion-filters-form">
+        <fieldset class="companion-filters__fieldset">
+          <legend class="companion-filters__fieldset-title">Хобби <button class="companion-filters__show-hide-button"
+              type="button">Скрыть/Показать</button></legend>
+        </fieldset>
+        <fieldset class="companion-filters__fieldset">
+          <legend class="companion-filters__fieldset-title">Музыка <button class="companion-filters__show-hide-button"
+              type="button">Скрыть/Показать</button></legend>
+          <ul class="companion-filters__chk-list">
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="hard-rock" name="hard-rock"
+                value="hard-rock" checked />
+              <label for="hard-rock">Хард рок</label>
+            </li>
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="russian-rap" name="russian-rap"
+                value="russian-rap" />
+              <label for="russian-rap">Русский рэп</label>
+            </li>
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="eurodance" name="eurodance"
+                value="eurodance" />
+              <label for="eurodance">Евродeнс</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="companion-filters__fieldset">
+          <legend class="companion-filters__fieldset-title">Еда <button class="companion-filters__show-hide-button"
+              type="button">Скрыть/Показать</button></legend>
+        </fieldset>
+        <fieldset class="companion-filters__fieldset">
+          <legend class="companion-filters__fieldset-title">Транспорт <button
+              class="companion-filters__show-hide-button" type="button">Скрыть/Показать</button></legend>
+          <ul class="companion-filters__chk-list">
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="airplane" name="airplane" value="airplane"
+                checked />
+              <label for="airplane">Самолет</label>
+            </li>
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="bus" name="bus" value="bus" />
+              <label for="bus">Автобус</label>
+            </li>
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="bicycle" name="bicycle" value="bicycle" />
+              <label for="bicycle">Велосипед</label>
+            </li>
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="foot" name="foot" value="foot" />
+              <label for="foot">Пешком</label>
+            </li>
+          </ul>
+        </fieldset>
+        <input type="range">
+        <button class="companion-filters__submit-button" type="submit">Показать</button>
+      </form>
+    </section>
+
     <section class="companions-cards">
       <h2 class="visually-hidden">Список попутчиков</h2>
       <ul class="companions-cards__list">
@@ -160,7 +226,9 @@
       <button class="companions-cards__button-left">Назад</button>
       <button class="companions-cards__button-right">Вперед</button>
     </section>
+
   </main>
+
   <footer class="page-footer">
     <a class="page-footer__logo logo">
       <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?">
@@ -177,6 +245,7 @@
       <a class="button copyright__link" href="#">HTML Academy</a>
     </div>
   </footer>
+
 </body>
 
 </html>
