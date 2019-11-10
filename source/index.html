@@ -1,12 +1,236 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Погнали</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/100x19" width="100" height="19"
+        alt="Погнали?">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle">Открыть меню</button>
+    </nav>
+    <b class="page-header__slogan">В путешествие с крутыми попутчиками</b>
+    <ul class="user-buttons">
+      <li class="user-buttons__item">
+        <a class="user-buttons__phone" href=" tel:+7800558628">Телефон</a></li>
+      <li class="user-buttons__item">
+        <a class="user-buttons__email" href=" mailto:mail@htmlacademy.ru">Почта</a></li>
+      <li class="user-buttons__item">
+        <a class="user-buttons__user-in" href="#">Авторизация</a></li>
+    </ul>
+    <section class="page-header__review">
+      <p class="page-header__review-text">"Лучшее приложение, что я видел в жизни!"</p>
+      <p class="page-header__review-author">Мурат Эльтазин главный редактор газеты "гаджетлайф"</p>
+    </section>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Приложение "Погнали?"</h1>
+    <section class="official-menu">
+      <h2 class="visually-hidden">Служебное меню</h2>
+      <ul class="official-menu__list">
+        <li class="official-menu__item">
+          <a href="#">
+            <p class="official-menu_title">Выберите направление</p>
+            <span class="official-menu__number">1</span>
+          </a>
+        </li>
+        <li class="official-menu__item">
+          <a href="#">
+            <p class="official-menu_title">Изучите идеи путешественников</p>
+            <span class="official-menu__number">2</span>
+          </a>
+        </li>
+        <li class="official-menu__item">
+          <a href="#">
+            <p class="official-menu_title">Находите тех, кто похож на вас</p>
+            <span class="official-menu__number">3</span>
+          </a>
+        </li>
+        <li class="official-menu__item">
+          <a href="#">
+            <p class="official-menu_title">Путешествуйте вместе!</p>
+            <span class="official-menu__number">4</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="about">
+      <h2 class="about__title">
+        О сервисе
+      </h2>
+      <p class="about__text">
+        Любое путешествие веселее
+        c попутчиками, которые на
+        одной волне с тобой! Делитесь
+        своими идеями путешествий и
+        черпайте вдохновение в чужих.
+      </p>
+      <p class="about_comment">
+        А если найдете кого-то
+        близкого по духу — скорее
+        зовите в совместный трип!
+      </p>
+    </section>
+    <section class="directions">
+      <h2 class="directions__title">
+        Направления
+      </h2>
+      <p class="directions__about">
+        Мы не продаем туры
+        и ничего не рекламируем.
+        Люди сами пишут о странах,
+        куда хотели бы отправиться
+        и чем можно там заняться.
+      </p>
+      <ul class="directions__list">
+        <li class="directions__item">
+          <a href="#">
+            <img class="directions__country-flag" src="https://via.placeholder.com/35x24" width="35" height="24"
+              alt="Флаг Тайланда">
+            <h3 class="directions__country-name">Тайланд</h3>
+            <p class="directions__country-slogan">Джунгли зовут!</p>
+            <span class="directions__country-popularity">18321</span>
+          </a>
+        </li>
+        <li class="directions__item">
+          <a href="#">
+            <img class="directions__country-flag" src="https://via.placeholder.com/35x24" width="35" height="24"
+              alt="Флаг Франции">
+            <h3 class="directions__country-name">Франция</h3>
+            <p class="directions__country-slogan">Трэ бьен, манифик!</p>
+            <span class="directions__country-popularity">12518</span>
+          </a>
+        </li>
+        <li class="directions__item">
+          <a href="#">
+            <img class="directions__country-flag" src="https://via.placeholder.com/35x24" width="35" height="24"
+              alt="Флаг Чехии">
+            <h3 class="directions__country-name">Чехия</h3>
+            <p class="directions__country-slogan">Закоулки старой Европы</p>
+            <span class="directions__country-popularity">5326</span>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="directions__button-all">Показать все</a>
+    </section>
+    <section class="companions">
+      <h2 class="companions__title">
+        Попутчики
+      </h2>
+      <p class="companions__about">
+        Все мы индивидуальны и у
+        каждого свой взгляд на
+        идеальный отдых. Одному
+        нужен пляж и коктейль, а
+        другому маршрут для хайкинга.
+      </p>
+      <p class="companions__comment">
+        Теперь можно легко найти
+        единомышленников!
+      </p>
+      <ul class="companions__list">
+        <li class="companions__item">
+          <a href="#">
+            <span class="companions__level">
+              99 level
+            </span>
+            <ul class="companions__flags-list">
+              <li class="companions__flag-item">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Шри-Ланка">
+              </li>
+              <li class="companions__flag-item">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Тайланд">
+              </li>
+              <li class="companions__flag-item">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Сейшеллы">
+              </li>
+            </ul>
+            <h3 class="companions__title-fio">
+              Таня Фирсова
+            </h3>
+            <p class="companions__hashtags">
+              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+            </p>
+            <ul class="companions__travel-type-list">
+              <li class="companions__travel-type-item">Самолет</li>
+              <li class="companions__travel-type-item">Автобус</li>
+              <li class="companions__travel-type-item">Велосипед</li>
+              <li class="companions__travel-type-item">Пешком</li>
+            </ul>
+          </a>
+        </li>
+        <li class="companions__item">
+          <a href="#">
+            <span class="companions__level">
+              80 level
+            </span>
+            <ul class="companions__flags-list">
+              <li class="companions__flag-item">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Германии">
+              </li>
+              <li class="companions__flag-item">
+                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехии">
+              </li>
+            </ul>
+            <h3 class="companions__title-fio">
+              Петя Демин
+            </h3>
+            <p class="companions__hashtags">
+              #бургер #бар #футбол #концерт #крафт
+            </p>
+            <ul class="companions__travel-type-list">
+              <li class="companions__travel-type-item">Самолет</li>
+              <li class="companions__travel-type-item">Автобус</li>
+              <li class="companions__travel-type-item">Велосипед</li>
+              <li class="companions__travel-type-item">Пешком</li>
+            </ul>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="companions__button-all">Показать всех</a>
+    </section>
+    <section class="profile-add">
+      <h2 class="profile-add__title">Добавьте свой профиль</h2>
+      <table class="profile-add__table">
+        <tr>
+          <td class="profile-add__service">Базовое размещение бесплатно</td>
+          <td class="profile-add__service-number">1</td>
+        </tr>
+        <tr>
+          <td class="profile-add__service">Вывод на первые позиции 99 руб./мес</td>
+          <td class="profile-add__service-number">2</td>
+        </tr>
+        <tr>
+          <td class="profile-add__service">Кастомный цвет карточки 59 руб./мес</td>
+          <td class="profile-add__service-number">3</td>
+        </tr>
+      </table>
+      <a href="#" class="profile-add__link-all"></a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo">
+      <img class="page-footer__logo-image" src="https://via.placeholder.com/100x19" width="100" height="19"
+        alt="Погнали?">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item"><a href="#" class="social__link">Facebook</a></li>
+        <li class="social__item"><a href="#" class="social__link">VK</a></li>
+        <li class="social__item"><a href="#" class="social__link">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="button copyright__link" href="#">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+
 </html>
