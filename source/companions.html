@@ -8,17 +8,83 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/100x19" width="100" height="19"
-        alt="Погнали?">
+    <a class="page-header__logo logo">
+      <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle">Открыть меню</button>
     </nav>
     <h1 class="page-header__title">Попутчики</h1>
   </header>
+
   <main class="page-main">
+    <section class="companion-country-filters">
+      <h2 class="companion-country-filters__title section-title">Фильтрация по странам</h2>
+      <button>Кнопка</button>
+    </section>
+
+    <section class="companion-filters">
+      <h2 class="companion-filters__title section-title">Подбери идеального попутчика</h2>
+      <form action="" class="companion-filters-form">
+        <fieldset class="companion-filters__fieldset">
+          <legend class="companion-filters__fieldset-title">Хобби <button class="companion-filters__show-hide-button"
+              type="button">Скрыть/Показать</button></legend>
+        </fieldset>
+        <fieldset class="companion-filters__fieldset">
+          <legend class="companion-filters__fieldset-title">Музыка <button class="companion-filters__show-hide-button"
+              type="button">Скрыть/Показать</button></legend>
+          <ul class="companion-filters__chk-list">
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="hard-rock" name="hard-rock"
+                value="hard-rock" checked />
+              <label for="hard-rock">Хард рок</label>
+            </li>
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="russian-rap" name="russian-rap"
+                value="russian-rap" />
+              <label for="russian-rap">Русский рэп</label>
+            </li>
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="eurodance" name="eurodance"
+                value="eurodance" />
+              <label for="eurodance">Евродeнс</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="companion-filters__fieldset">
+          <legend class="companion-filters__fieldset-title">Еда <button class="companion-filters__show-hide-button"
+              type="button">Скрыть/Показать</button></legend>
+        </fieldset>
+        <fieldset class="companion-filters__fieldset">
+          <legend class="companion-filters__fieldset-title">Транспорт <button
+              class="companion-filters__show-hide-button" type="button">Скрыть/Показать</button></legend>
+          <ul class="companion-filters__chk-list">
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="airplane" name="airplane" value="airplane"
+                checked />
+              <label for="airplane">Самолет</label>
+            </li>
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="bus" name="bus" value="bus" />
+              <label for="bus">Автобус</label>
+            </li>
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="bicycle" name="bicycle" value="bicycle" />
+              <label for="bicycle">Велосипед</label>
+            </li>
+            <li class="companion-filters__chk-item">
+              <input class="companion-filters__chk-box" type="checkbox" id="foot" name="foot" value="foot" />
+              <label for="foot">Пешком</label>
+            </li>
+          </ul>
+        </fieldset>
+        <input type="range">
+        <button class="companion-filters__submit-button" type="submit">Показать</button>
+      </form>
+    </section>
+
     <section class="companions-cards">
+      <h2 class="visually-hidden">Список попутчиков</h2>
       <ul class="companions-cards__list">
         <li class="companions-cards__item">
           <h3 class="companions-cards__fio">Таня Фирсова</h3>
@@ -27,34 +93,34 @@
           <span class="companions-cards__likes">1.5 М</span>
           <p class="companions-cards__hashtags">#ЗОЖ #ПП #Фитнес #пляж
             #авокадо #смузи</p>
-          <h4 class="companions-cards__section-title">хочет посетить:</h4>
+          <span class="companions-cards__section-title">хочет посетить:</span>
           <ul class="companions-cards__visit-list">
             <li class="companions-cards__visit-item">
               <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
                 height="24" alt="Шри-Ланка">
-              <p class="companions-cards__visit-name-country">Шри-Ланка</p>
+              <h4 class="companions-cards__visit-name-country">Шри-Ланка</h4>
             </li>
             <li class="companions-cards__visit-item">
               <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
                 height="24" alt="Тайланд">
-              <p class="companions-cards__visit-name-country">Тайланд</p>
+              <h4 class="companions-cards__visit-name-country">Тайланд</h4>
             </li>
             <li class="companions-cards__visit-item">
               <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
                 height="24" alt="Сейшелы">
-              <p class="companions-cards__visit-name-country">Сейшелы</p>
+              <h4 class="companions-cards__visit-name-country">Сейшелы</h4>
             </li>
           </ul>
-          <h4 class="companions-cards__section-title">транспорт:</h4>
-          <ul class="companions-cards__tranports-list">
-            <li class="companions-cards__tranports-item">Самолет</li>
-            <li class="companions-cards__tranports-item">Автобус</li>
-            <li class="companions-cards__tranports-item">Велосипед</li>
-            <li class="companions-cards__tranports-item">Пешком</li>
-          </ul>
-          <h4 class="companions-cards__section-title">левел:</h4>
-          <span class="companions-cards__lvl">99</span>
-          <a href="#" class="companions-cards__button-call">Позвать!</a>
+          <span class="companions-cards__section-title">транспорт:</s>
+            <ul class="companions-cards__tranports-list">
+              <li class="companions-cards__tranports-item">Самолет</li>
+              <li class="companions-cards__tranports-item">Автобус</li>
+              <li class="companions-cards__tranports-item">Велосипед</li>
+              <li class="companions-cards__tranports-item">Пешком</li>
+            </ul>
+            <span class="companions-cards__section-title">левел:</span>
+            <span class="companions-cards__lvl">99</span>
+            <a href="#" class="companions-cards__button-call">Позвать!</a>
         </li>
         <li class="companions-cards__item">
           <h3 class="companions-cards__fio">Петя Демин</h3>
@@ -63,27 +129,27 @@
           <span class="companions-cards__likes">150</span>
           <p class="companions-cards__hashtags">#бургер #бар #футбол
             #концерт #крафт</p>
-          <h4 class="companions-cards__section-title">хочет посетить:</h4>
+          <span class="companions-cards__section-title">хочет посетить:</span>
           <ul class="companions-cards__visit-list">
             <li class="companions-cards__visit-item">
               <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
                 height="24" alt="Бельгия">
-              <p class="companions-cards__visit-name-country">Бельгия</p>
+              <h4 class="companions-cards__visit-name-country">Бельгия</h4>
             </li>
             <li class="companions-cards__visit-item">
               <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
                 height="24" alt="Чехия">
-              <p class="companions-cards__visit-name-country">Чехия</p>
+              <h4 class="companions-cards__visit-name-country">Чехия</h4>
             </li>
           </ul>
-          <h4 class="companions-cards__section-title">транспорт:</h4>
+          <span class="companions-cards__section-title">транспорт:</span>
           <ul class="companions-cards__tranports-list">
             <li class="companions-cards__tranports-item">Самолет</li>
             <li class="companions-cards__tranports-item">Автобус</li>
             <li class="companions-cards__tranports-item">Велосипед</li>
             <li class="companions-cards__tranports-item">Пешком</li>
           </ul>
-          <h4 class="companions-cards__section-title">левел:</h4>
+          <span class="companions-cards__section-title">левел:</span>
           <span class="companions-cards__lvl">80</span>
           <a href="#" class="companions-cards__button-call">Позвать!</a>
         </li>
@@ -94,32 +160,32 @@
           <span class="companions-cards__likes">1700</span>
           <p class="companions-cards__hashtags">#рэп #тату #хайпбист
             #кроссовки #суприм</p>
-          <h4 class="companions-cards__section-title">хочет посетить:</h4>
+          <span class="companions-cards__section-title">хочет посетить:</span>
           <ul class="companions-cards__visit-list">
             <li class="companions-cards__visit-item">
               <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
                 height="24" alt="США">
-              <p class="companions-cards__visit-name-country">США</p>
+              <h4 class="companions-cards__visit-name-country">США</h4>
             </li>
             <li class="companions-cards__visit-item">
               <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
                 height="24" alt="Австралия">
-              <p class="companions-cards__visit-name-country">Австралия</p>
+              <h4 class="companions-cards__visit-name-country">Австралия</h4>
             </li>
             <li class="companions-cards__visit-item">
               <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
                 height="24" alt="Доминикана">
-              <p class="companions-cards__visit-name-country">Доминикана</p>
+              <h4 class="companions-cards__visit-name-country">Доминикана</h4>
             </li>
           </ul>
-          <h4 class="companions-cards__section-title">транспорт:</h4>
+          <span class="companions-cards__section-title">транспорт:</span>
           <ul class="companions-cards__tranports-list">
             <li class="companions-cards__tranports-item">Самолет</li>
             <li class="companions-cards__tranports-item">Автобус</li>
             <li class="companions-cards__tranports-item">Велосипед</li>
             <li class="companions-cards__tranports-item">Пешком</li>
           </ul>
-          <h4 class="companions-cards__section-title">левел:</h4>
+          <span class="companions-cards__section-title">левел:</span>
           <span class="companions-cards__lvl">25</span>
           <a href="#" class="companions-cards__button-call">Позвать!</a>
         </li>
@@ -131,27 +197,27 @@
           <p class="companions-cards__hashtags">#образование #карьера
             #учеба #линкедин
           </p>
-          <h4 class="companions-cards__section-title">хочет посетить:</h4>
+          <span class="companions-cards__section-title">хочет посетить:</span>
           <ul class="companions-cards__visit-list">
             <li class="companions-cards__visit-item">
               <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
                 height="24" alt="Великобритания">
-              <p class="companions-cards__visit-name-country">Великобритания</p>
+              <h4 class="companions-cards__visit-name-country">Великобритания</h4>
             </li>
             <li class="companions-cards__visit-item">
               <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
                 height="24" alt="Германия">
-              <p class="companions-cards__visit-name-country">Германия</p>
+              <h4 class="companions-cards__visit-name-country">Германия</h4>
             </li>
           </ul>
-          <h4 class="companions-cards__section-title">транспорт:</h4>
+          <span class="companions-cards__section-title">транспорт:</span>
           <ul class="companions-cards__tranports-list">
             <li class="companions-cards__tranports-item">Самолет</li>
             <li class="companions-cards__tranports-item">Автобус</li>
             <li class="companions-cards__tranports-item">Велосипед</li>
             <li class="companions-cards__tranports-item">Пешком</li>
           </ul>
-          <h4 class="companions-cards__section-title">левел:</h4>
+          <span class="companions-cards__section-title">левел:</span>
           <span class="companions-cards__lvl">50</span>
           <a href="#" class="companions-cards__button-call">Позвать!</a>
         </li>
@@ -160,17 +226,18 @@
       <button class="companions-cards__button-left">Назад</button>
       <button class="companions-cards__button-right">Вперед</button>
     </section>
+
   </main>
+
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="https://via.placeholder.com/100x19" width="100" height="19"
-        alt="Погнали?">
+    <a class="page-footer__logo logo">
+      <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
-        <li class="social__item"><a href="#" class="social__link">Facebook</a></li>
-        <li class="social__item"><a href="#" class="social__link">VK</a></li>
-        <li class="social__item"><a href="#" class="social__link">Instagram</a></li>
+        <li class="social__item"><a href="#" class="social__link social_facebook">Facebook</a></li>
+        <li class="social__item"><a href="#" class="social__link social_vk">VK</a></li>
+        <li class="social__item"><a href="#" class="social__link social_instagram">Instagram</a></li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
@@ -178,6 +245,7 @@
       <a class="button copyright__link" href="#">HTML Academy</a>
     </div>
   </footer>
+
 </body>
 
 </html>
