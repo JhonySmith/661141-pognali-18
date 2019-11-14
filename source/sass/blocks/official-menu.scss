@@ -1,6 +1,6 @@
 .official-menu__list {
   position: relative;
-    height: 320px;
+  height: 320px;
   list-style-type: none;
   counter-reset: item;
 }
@@ -20,7 +20,7 @@
   }
 
   &:nth-child(2) {
-    top:80px;
+    top: 80px;
     background-color: #ffa530;
   }
 
@@ -39,15 +39,15 @@
   }
 
   &::after {
-  content: counter(item);
-  counter-increment: item;
+    content: counter(item);
+    counter-increment: item;
 
-  font-weight: 700;
-  font-size: 18px;
-  font-family: $BloggerSans;
-  letter-spacing: 0;
-  line-height: 18px;
-  color: white;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: $BloggerSans;
+    letter-spacing: 0;
+    line-height: 18px;
+    color: white;
   }
 }
 
