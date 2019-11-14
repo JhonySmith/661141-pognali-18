@@ -1,257 +1,344 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>HTML Academy: Погнали</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <header class="page-header">
-    <a class="page-header__logo logo">
-      <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle button-toggle"></button>
-    </nav>
-    <b class="page-header__slogan">В путешествие с крутыми попутчиками</b>
-    <ul class="user-buttons">
-      <li class="user-buttons__item">
-        <a class="user-buttons__phone" href=" tel:+7800558628"></a></li>
-      <li class="user-buttons__item">
-        <a class="user-buttons__email" href=" mailto:mail@htmlacademy.ru"></a></li>
-      <li class="user-buttons__item">
-        <a class="user-buttons__user-in" href="#">Авторизация</a></li>
-    </ul>
-    <section class="page-header__review">
-      <p class="page-header__review-text content-about">"Лучшее приложение, что я видел в жизни!"</p>
-      <b class="page-header__review-author content-comment">Мурат Эльтазин главный редактор газеты "гаджетлайф"</b>
-    </section>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Приложение "Погнали?"</h1>
-    <section class="official-menu">
-      <h2 class="visually-hidden">Служебное меню</h2>
-      <ol class="official-menu__list">
-        <li class="official-menu__item">
-          <a class="official-menu_title" href="#">
-            Выберите направление
-          </a>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo logo">
+        <img
+          src="img/logo-mobile-white@1x.png"
+          width="100"
+          height="19"
+          alt="Погнали?"
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle button-toggle"></button>
+      </nav>
+      <b class="page-header__slogan">В путешествие с крутыми попутчиками</b>
+      <ul class="user-buttons">
+        <li class="user-buttons__item">
+          <a class="user-buttons__phone" href=" tel:+7800558628"></a>
         </li>
-        <li class="official-menu__item">
-          <a class="official-menu_title" href="#">
-            Изучите идеи путешественников
-          </a>
+        <li class="user-buttons__item">
+          <a class="user-buttons__email" href=" mailto:mail@htmlacademy.ru"></a>
         </li>
-        <li class="official-menu__item">
-          <a class="official-menu_title" href="#">
-            Находите тех, кто похож на вас
-          </a>
-        </li>
-        <li class="official-menu__item">
-          <a class="official-menu_title" href="#">
-            Путешествуйте вместе!
-          </a>
-        </li>
-      </ol>
-    </section>
-    <section class="about">
-      <h2 class="about__title section-title">
-        О сервисе
-      </h2>
-      <p class="about__text content-about">
-        Любое путешествие веселее
-        c попутчиками, которые на
-        одной волне с тобой! Делитесь
-        своими идеями путешествий и
-        черпайте вдохновение в чужих.
-      </p>
-      <p class="about_comment content-comment">
-        А если найдете кого-то
-        близкого по духу — скорее
-        зовите в совместный трип!
-      </p>
-    </section>
-    <section class="directions">
-      <h2 class="directions__title section-title">
-        Направления
-      </h2>
-      <p class="directions__about content-about">
-        Мы не продаем туры
-        и ничего не рекламируем.
-        Люди сами пишут о странах,
-        куда хотели бы отправиться
-        и чем можно там заняться.
-      </p>
-      <ul class="directions__list">
-        <li class="directions__item">
-          <a href="#">
-            <img class="directions__country-flag" src="https://via.placeholder.com/35x24" width="35" height="24"
-              alt="Флаг Тайланда">
-            <h3 class="directions__country-name">Тайланд</h3>
-            <p class="directions__country-slogan">Джунгли зовут!</p>
-            <span class="directions__country-popularity">18321</span>
-          </a>
-        </li>
-        <li class="directions__item">
-          <a href="#">
-            <img class="directions__country-flag" src="https://via.placeholder.com/35x24" width="35" height="24"
-              alt="Флаг Франции">
-            <h3 class="directions__country-name">Франция</h3>
-            <p class="directions__country-slogan">Трэ бьен, манифик!</p>
-            <span class="directions__country-popularity">12518</span>
-          </a>
-        </li>
-        <li class="directions__item">
-          <a href="#">
-            <img class="directions__country-flag" src="https://via.placeholder.com/35x24" width="35" height="24"
-              alt="Флаг Чехии">
-            <h3 class="directions__country-name">Чехия</h3>
-            <p class="directions__country-slogan">Закоулки старой Европы</p>
-            <span class="directions__country-popularity">5326</span>
-          </a>
+        <li class="user-buttons__item">
+          <a class="user-buttons__user-in" href="#">Авторизация</a>
         </li>
       </ul>
-      <a href="#" class="directions__button-all">Показать все</a>
-    </section>
-    <section class="companions">
-      <h2 class="companions__title section-title">
-        Попутчики
-      </h2>
-      <p class="companions__about content-about">
-        Все мы индивидуальны и у
-        каждого свой взгляд на
-        идеальный отдых. Одному
-        нужен пляж и коктейль, а
-        другому маршрут для хайкинга.
-      </p>
-      <p class="companions__comment content-comment">
-        Теперь можно легко найти
-        единомышленников!
-      </p>
-      <ul class="companions__list">
-        <li class="companions__item">
-          <a href="#">
-            <span class="companions__level">
-              99 level
-            </span>
-            <ul class="companions__flags-list">
-              <li class="companions__flag-item">
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Шри-Ланка">
-              </li>
-              <li class="companions__flag-item">
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Тайланд">
-              </li>
-              <li class="companions__flag-item">
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Сейшеллы">
-              </li>
-            </ul>
-            <h3 class="companions__title-fio block-title">
-              Таня Фирсова
-            </h3>
-            <p class="companions__hashtags">
-              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-            </p>
-            <ul class="companions__travel-type-list">
-              <li class="companions__travel-type-item">Самолет</li>
-              <li class="companions__travel-type-item">Автобус</li>
-              <li class="companions__travel-type-item">Велосипед</li>
-              <li class="companions__travel-type-item">Пешком</li>
-            </ul>
-          </a>
-        </li>
-        <li class="companions__item">
-          <a href="#">
-            <span class="companions__level">
-              80 level
-            </span>
-            <ul class="companions__flags-list">
-              <li class="companions__flag-item">
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Германии">
-              </li>
-              <li class="companions__flag-item">
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехии">
-              </li>
-            </ul>
-            <h3 class="companions__title-fio block-title">
-              Петя Демин
-            </h3>
-            <p class="companions__hashtags">
-              #бургер #бар #футбол #концерт #крафт
-            </p>
-            <ul class="companions__travel-type-list">
-              <li class="companions__travel-type-item">Самолет</li>
-              <li class="companions__travel-type-item">Автобус</li>
-              <li class="companions__travel-type-item">Велосипед</li>
-              <li class="companions__travel-type-item">Пешком</li>
-            </ul>
-          </a>
-        </li>
-      </ul>
-      <a href="#" class="companions__button-all">Показать всех</a>
-    </section>
-    <section class="profile-add">
-      <h2 class="profile-add__title section-title">Добавьте свой профиль</h2>
-      <ul class="profile-add__list">
-        <li class="profile-add__item">Базовое размещение бесплатно</li>
-        <li class="profile-add__item">Вывод на первые позиции 99 руб./мес</li>
-        <li class="profile-add__item">Кастомный цвет карточки 59 руб./мес</li>
-      </ul>
-      <a href="#" class="profile-add__link-all">Показать тариф для бизнеса</a>
-    </section>
-    <section class="feedback">
-      <h2 class="feedback__title section-title">Заинтересовались?</h2>
-      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="feedback__label" for="registration">Зарегистрируйтесь,
-          это быстро и бесплатно!
-          Уже зарегистрированы? Тогда
-          скорее <a class="feedback__auth-link" href="#">авторизуйтесь.</a>
-        </label>
-        <input class="feedback__input" type="text" placeholder="E-mail" name="registration">
-        <button class="feedback__button-submit" type="submit">Отправить</button>
-      </form>
-      <p class="feedback__comment">
-        Остались вопросы?
-        Мы с радостью на них ответим!
-      </p>
-      <ul class="feedback__contacts-list">
-        <li class="feedback__contacts-item">
-          <a class="feedback__phone" href=" tel:+7800558628">8 800 55-86-28</a>
-        </li>
-        <li class="feedback__contacts-item">
-          <a class="feedback__email" href=" mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-      </ul>
-    </section>
-    <section class="adress">
-      <h2 class="visually-hidden">Наш адрес</h2>
-      <p class="adress__text">
-        ул. Большая
-        Конюшенная, 19/8
-      </p>
-      <a class="adress__way-button" href="#">Проложить маршрут</a>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003192!2d30.320858716217955!3d59.93871916905404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573394746659!5m2!1sru!2sru"
-        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <a class="page-footer__logo logo">
-      <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item"><a href="#" class="social__link social_facebook">Facebook</a></li>
-        <li class="social__item"><a href="#" class="social__link social_vk">VK</a></li>
-        <li class="social__item"><a href="#" class="social__link social_instagram">Instagram</a></li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="button copyright__link" href="#">HTML Academy</a>
-    </div>
-  </footer>
-</body>
-
+      <section class="page-header__review">
+        <p class="page-header__review-text content-about">
+          "Лучшее приложение, что я видел в жизни!"
+        </p>
+        <b class="page-header__review-author content-comment"
+          >Мурат Эльтазин главный редактор газеты "гаджетлайф"</b
+        >
+      </section>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение "Погнали?"</h1>
+      <section class="official-menu">
+        <h2 class="visually-hidden">Служебное меню</h2>
+        <ol class="official-menu__list">
+          <li class="official-menu__item">
+            <a class="official-menu_title" href="#">
+              Выберите направление
+            </a>
+          </li>
+          <li class="official-menu__item">
+            <a class="official-menu_title" href="#">
+              Изучите идеи путешественников
+            </a>
+          </li>
+          <li class="official-menu__item">
+            <a class="official-menu_title" href="#">
+              Находите тех, кто похож на вас
+            </a>
+          </li>
+          <li class="official-menu__item">
+            <a class="official-menu_title" href="#">
+              Путешествуйте вместе!
+            </a>
+          </li>
+        </ol>
+      </section>
+      <section class="about">
+        <h2 class="about__title section-title">
+          О сервисе
+        </h2>
+        <p class="about__text content-about">
+          Любое путешествие веселее c попутчиками, которые на одной волне с
+          тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
+          чужих.
+        </p>
+        <p class="about_comment content-comment">
+          А если найдете кого-то близкого по духу — скорее зовите в совместный
+          трип!
+        </p>
+      </section>
+      <section class="directions">
+        <h2 class="directions__title section-title">
+          Направления
+        </h2>
+        <p class="directions__about content-about">
+          Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах,
+          куда хотели бы отправиться и чем можно там заняться.
+        </p>
+        <ul class="directions__list">
+          <li class="directions__item directions__item--thailand">
+            <a class="directions__item-link" href="#">
+              <img
+                class="directions__country-flag"
+                src="img/thailand_flag.png"
+                width="35"
+                height="24"
+                alt="Флаг Тайланда"
+              />
+              <div class="directions__item-wraper">
+                <div>
+                  <h3 class="directions__country-name">Тайланд</h3>
+                  <p class="directions__country-slogan">Джунгли зовут!</p>
+                </div>
+                <span class="directions__country-popularity">18321</span>
+              </div>
+            </a>
+          </li>
+          <li class="directions__item directions__item--france">
+            <a class="directions__item-link" href="#">
+              <img
+                class="directions__country-flag"
+                src="img/france_flag.png"
+                width="35"
+                height="24"
+                alt="Флаг Франции"
+              />
+              <div class="directions__item-wraper">
+                <div>
+                  <h3 class="directions__country-name">Франция</h3>
+                  <p class="directions__country-slogan">Трэ бьен, манифик!</p>
+                </div>
+                <span class="directions__country-popularity">12518</span>
+              </div>
+            </a>
+          </li>
+          <li class="directions__item directions__item--czech">
+            <a class="directions__item-link" href="#">
+              <img
+                class="directions__country-flag"
+                src="img/czech_flag.png"
+                width="35"
+                height="24"
+                alt="Флаг Чехии"
+              />
+              <div class="directions__item-wraper">
+                <div>
+                  <h3 class="directions__country-name">Чехия</h3>
+                  <p class="directions__country-slogan">
+                    Закоулки старой Европы
+                  </p>
+                </div>
+                <span class="directions__country-popularity">5326</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="directions__button-all index-button">Показать все</a>
+      </section>
+      <section class="companions">
+        <h2 class="companions__title section-title">
+          Попутчики
+        </h2>
+        <p class="companions__about content-about">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <p class="companions__comment content-comment">
+          Теперь можно легко найти единомышленников!
+        </p>
+        <ul class="companions__list">
+          <li class="companions__item">
+            <a href="#">
+              <span class="companions__level">
+                99 <span class="companions__text-level">level</span>
+              </span>
+              <ul class="companions__flags-list">
+                <li class="companions__flag-item">
+                  <img
+                    src="https://via.placeholder.com/35x24"
+                    width="35"
+                    height="24"
+                    alt="Флаг Шри-Ланка"
+                  />
+                </li>
+                <li class="companions__flag-item">
+                  <img
+                    src="https://via.placeholder.com/35x24"
+                    width="35"
+                    height="24"
+                    alt="Флаг Тайланд"
+                  />
+                </li>
+                <li class="companions__flag-item">
+                  <img
+                    src="https://via.placeholder.com/35x24"
+                    width="35"
+                    height="24"
+                    alt="Флаг Сейшеллы"
+                  />
+                </li>
+              </ul>
+              <h3 class="companions__title-fio block-title">
+                Таня Фирсова
+              </h3>
+              <p class="companions__hashtags">
+                #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+              </p>
+              <ul class="companions__travel-type-list">
+                <li class="companions__travel-type-item">Самолет</li>
+                <li class="companions__travel-type-item">Автобус</li>
+                <li class="companions__travel-type-item">Велосипед</li>
+                <li class="companions__travel-type-item">Пешком</li>
+              </ul>
+            </a>
+          </li>
+          <li class="companions__item">
+            <a href="#">
+              <span class="companions__level">
+                80 <span class="companions__text-level">level</span>
+              </span>
+              <ul class="companions__flags-list">
+                <li class="companions__flag-item">
+                  <img
+                    src="https://via.placeholder.com/35x24"
+                    width="35"
+                    height="24"
+                    alt="Флаг Германии"
+                  />
+                </li>
+                <li class="companions__flag-item">
+                  <img
+                    src="https://via.placeholder.com/35x24"
+                    width="35"
+                    height="24"
+                    alt="Флаг Чехии"
+                  />
+                </li>
+              </ul>
+              <h3 class="companions__title-fio block-title">
+                Петя Демин
+              </h3>
+              <p class="companions__hashtags">
+                #бургер #бар #футбол #концерт #крафт
+              </p>
+              <ul class="companions__travel-type-list">
+                <li class="companions__travel-type-item">Самолет</li>
+                <li class="companions__travel-type-item">Автобус</li>
+                <li class="companions__travel-type-item">Велосипед</li>
+                <li class="companions__travel-type-item">Пешком</li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="companions__button-all index-button"
+          >Показать всех</a
+        >
+      </section>
+      <section class="profile-add">
+        <h2 class="profile-add__title section-title">Добавьте свой профиль</h2>
+        <ul class="profile-add__list">
+          <li class="profile-add__item">Базовое размещение бесплатно</li>
+          <li class="profile-add__item">Вывод на первые позиции 99 руб./мес</li>
+          <li class="profile-add__item">Кастомный цвет карточки 59 руб./мес</li>
+        </ul>
+        <a href="#" class="profile-add__link-all">Показать тариф для бизнеса</a>
+      </section>
+      <section class="feedback">
+        <h2 class="feedback__title section-title">Заинтересовались?</h2>
+        <form
+          class="feedback__form"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
+          <label class="feedback__label" for="registration"
+            >Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы?
+            Тогда скорее
+            <a class="feedback__auth-link" href="#">авторизуйтесь.</a>
+          </label>
+          <input
+            class="feedback__input"
+            type="text"
+            placeholder="E-mail"
+            name="registration"
+          />
+          <button class="feedback__button-submit" type="submit">
+            Отправить
+          </button>
+        </form>
+        <p class="feedback__comment">
+          Остались вопросы? Мы с радостью на них ответим!
+        </p>
+        <ul class="feedback__contacts-list">
+          <li class="feedback__contacts-item">
+            <a class="feedback__phone" href=" tel:+7800558628"
+              >8 800 55-86-28</a
+            >
+          </li>
+          <li class="feedback__contacts-item">
+            <a class="feedback__email" href=" mailto:mail@htmlacademy.ru"
+              >mail@htmlacademy.ru</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="adress">
+        <h2 class="visually-hidden">Наш адрес</h2>
+        <p class="adress__text">
+          ул. Большая Конюшенная, 19/8
+        </p>
+        <a class="adress__way-button index-button" href="#"
+          >Проложить маршрут</a
+        >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003192!2d30.320858716217955!3d59.93871916905404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573394746659!5m2!1sru!2sru"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+        ></iframe>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo logo">
+        <img
+          src="https://via.placeholder.com/100x19"
+          width="100"
+          height="19"
+          alt="Погнали?"
+        />
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="button copyright__link" href="#">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
 </html>
