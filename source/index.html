@@ -259,37 +259,47 @@
       </section>
       <section class="feedback">
         <h2 class="feedback__title section-title">Заинтересовались?</h2>
+        <p class="feedback__label content-about">
+          Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда
+          скорее
+          <a class="feedback__auth-link" href="#">авторизуйтесь.</a>
+        </p>
         <form
           class="feedback__form"
           action="https://echo.htmlacademy.ru"
           method="post"
         >
-          <label class="feedback__label" for="registration"
-            >Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы?
-            Тогда скорее
-            <a class="feedback__auth-link" href="#">авторизуйтесь.</a>
+          <label for="tegistration" class="visually-hidden">
+            Введите E-mail
           </label>
           <input
             class="feedback__input"
             type="text"
             placeholder="E-mail"
+            id="registration"
             name="registration"
           />
-          <button class="feedback__button-submit" type="submit">
-            Отправить
-          </button>
+          <button
+            class="feedback__button-submit"
+            type="submit"
+            aria-label="Отправить"
+          ></button>
         </form>
-        <p class="feedback__comment">
+        <p class="feedback__comment content-about">
           Остались вопросы? Мы с радостью на них ответим!
         </p>
         <ul class="feedback__contacts-list">
           <li class="feedback__contacts-item">
-            <a class="feedback__phone" href=" tel:+7800558628"
+            <a
+              class="feedback__contact feedback__contact--phone"
+              href=" tel:+7800558628"
               >8 800 55-86-28</a
             >
           </li>
           <li class="feedback__contacts-item">
-            <a class="feedback__email" href=" mailto:mail@htmlacademy.ru"
+            <a
+              class="feedback__contact feedback__contact--email"
+              href=" mailto:mail@htmlacademy.ru"
               >mail@htmlacademy.ru</a
             >
           </li>
@@ -316,7 +326,7 @@
     <footer class="page-footer">
       <a class="page-footer__logo logo">
         <img
-          src="https://via.placeholder.com/100x19"
+          src="img/logo-mobile-blue@1x.png"
           width="100"
           height="19"
           alt="Погнали?"
@@ -337,7 +347,9 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="button copyright__link" href="#">HTML Academy</a>
+        <a class="button copyright__link" href="#"
+          ><span class="hidden">HTML Academy</span></a
+        >
       </div>
     </footer>
   </body>

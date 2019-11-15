@@ -49,3 +49,17 @@
     background-position: center;
   }
 }
+
+.copyright__text {
+  @include font-param(400, 16px, $BloggerSans, 0, 22px);
+}
+
+.copyright__link {
+  &::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    background: url("../img/htmlacademy.svg") no-repeat center;
+  }
+}
