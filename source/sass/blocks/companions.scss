@@ -5,12 +5,51 @@
   align-items: center;
   width: 60px;
   height: 60px;
-  border-color: #ff8d30;
-  border-width: 4px;
-  border-style: solid;
   border-radius: 50%;
+  background-color: rgba($color: black, $alpha: 0.6);
+  color: white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-top: 3px solid rgba($color: black, $alpha: 0.6);
+    border-left: 3px solid #ff8d30;
+    border-right: 3px solid #ff8d30;
+    border-bottom: 3px solid #ff8d30;
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-top: 3px solid transparent;
+    border-left: 3px solid #ff8d30;
+    border-right: 3px solid #ff8d30;
+    border-bottom: 3px solid #ff8d30;
+  }
 
   @include font-param(700, 24px, $BloggerSans, 0, 24px);
+}
+
+.companions__level--99 {
+  &::before {
+    transform: rotate(40deg);
+  }
+}
+
+.companions__level--80 {
+  &::before {
+    transform: rotate(-20deg);
+  }
 }
 
 .companions__list {
@@ -88,6 +127,6 @@
 
 .companions__text-level {
   @include font-param(400, 14px, $BloggerSans, 0, 14px);
-  border-top: 1px solid black;
+  border-top: 1px solid rgba($color: white, $alpha: 0.3);
   padding-top: 3px;
 }
