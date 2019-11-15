@@ -14,7 +14,7 @@
   padding-left: 25px;
   border-width: 0;
   border-radius: 10px;
-  @include font-param(700, 18px, $BloggerSans, 0, 18px);
+  @include font-param (700, 18px, $BloggerSans, 0, 18px);
 }
 
 .feedback__button-submit {
@@ -45,7 +45,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  @include font-param(700, 16px, $BloggerSans, 0, 22px);
+  @include font-param (700, 16px, $BloggerSans, 0, 22px);
   color: #ffd74b;
 }
 
