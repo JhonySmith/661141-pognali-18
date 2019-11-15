@@ -66,3 +66,7 @@
 .hidden {
   display: none;
 }
+
+.block-title {
+  @include font-param(700, 21px, $BloggerSans, 0, 21px);
+}

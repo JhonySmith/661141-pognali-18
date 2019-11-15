@@ -47,7 +47,7 @@
   align-items: center;
   text-decoration: none;
 
-  @include font-param (700, 16px, $BloggerSans, 0, 22px);
+  @include font-param(700, 16px, $BloggerSans, 0, 22px);
   color: #ffd74b;
 }
 
