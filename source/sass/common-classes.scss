@@ -1,0 +1,72 @@
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: $BloggerSans;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.content-about {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: $BloggerSans;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.content-comment {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: $BloggerSans;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.button-toggle {
+  content: "";
+  width: 25px;
+  height: 11px;
+  border: none;
+  background-image: url("../img/menu.svg");
+  background-color: transparent;
+}
+
+.index-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 270px;
+  height: 62px;
+  background-color: #ffd74b;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: $BloggerSans;
+  letter-spacing: 0;
+  line-height: 18px;
+  color: #1d2e5b;
+}
+
+.hidden {
+  display: none;
+}
+
+.block-title {
+  @include font-param(700, 21px, $BloggerSans, 0, 21px);
+}

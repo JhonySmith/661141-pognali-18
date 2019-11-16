@@ -1,0 +1,95 @@
+.directions__list {
+  list-style-type: none;
+}
+
+.directions__item-link {
+  text-decoration: none;
+}
+
+.directions__item {
+  position: relative;
+  display: block;
+  width: 270px;
+  height: 110px;
+  margin-bottom: 90px;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.directions__item-wraper {
+  position: absolute;
+  top: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+  border-radius: 8px;
+  width: 220px;
+  height: 90px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.directions__item--thailand {
+  background-image: url("../img/thailand-mobile@1x.jpg");
+}
+
+.directions__item--france {
+  background-image: url("../img/france-mobile@1x.jpg");
+}
+
+.directions__item--czech {
+  background-image: url("../img/czech-mobile@1x.jpg");
+}
+
+.directions__country-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  font-family: $BloggerSans;
+  letter-spacing: 0;
+  line-height: 21px;
+  color: #161c35;
+}
+
+.directions__country-slogan {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: $BloggerSans;
+  letter-spacing: 0;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.directions__country-flag {
+  position: absolute;
+  z-index: 2;
+  top: 87px;
+  left: 25px;
+}
+
+.directions__country-popularity {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: $BloggerSans;
+  letter-spacing: 0;
+  line-height: 30px;
+  color: rgba(68, 68, 68, 0.3);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    margin-right: 8px;
+    background: url("../img/user.svg") no-repeat center;
+    opacity: 0.1;
+  }
+}

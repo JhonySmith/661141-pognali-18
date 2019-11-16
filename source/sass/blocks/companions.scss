@@ -1,0 +1,132 @@
+.companions__level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba($color: black, $alpha: 0.6);
+  color: white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border-top: 3px solid transparent;
+    border-left: 3px solid #ff8d30;
+    border-right: 3px solid #ff8d30;
+    border-bottom: 3px solid #ff8d30;
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    display: block;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border-top: 3px solid transparent;
+    border-left: 3px solid #ff8d30;
+    border-right: 3px solid #ff8d30;
+    border-bottom: 3px solid #ff8d30;
+  }
+
+  @include font-param(700, 24px, $BloggerSans, 0, 24px);
+}
+
+.companions__level--99 {
+  &::before {
+    transform: rotate(40deg);
+  }
+}
+
+.companions__level--80 {
+  &::before {
+    transform: rotate(-20deg);
+  }
+}
+
+.companions__list {
+  list-style-type: none;
+}
+
+.companions__item-link {
+  text-decoration: none;
+}
+
+.companions__title-fio--blue {
+  color: #1d2e5b;
+}
+
+.companions__hashtags {
+  color: black;
+
+  @include font-param(400, 16px, $BloggerSans, 0, 18px);
+}
+
+.companions__travel-type-list {
+  list-style-type: none;
+}
+
+.companions__travel-type-item {
+  &::before {
+    content: "";
+    display: block;
+    opacity: 0.15;
+  }
+}
+
+.companions__travel-type-item--airplane {
+  &::before {
+    width: 19px;
+    height: 21px;
+    background-image: url("../img/plane.svg");
+  }
+}
+
+.companions__travel-type-item--bus {
+  &::before {
+    width: 17px;
+    height: 21px;
+    background-image: url("../img/bus.svg");
+  }
+}
+
+.companions__travel-type-item--bicycle {
+  &::before {
+    width: 24px;
+    height: 21px;
+    background-image: url("../img/bike.svg");
+  }
+}
+
+.companions__travel-type-item--foot {
+  &::before {
+    width: 20px;
+    height: 21px;
+    background-image: url("../img/run.svg");
+  }
+}
+
+.companions__travel-type-item--active {
+  &::before {
+    opacity: 1;
+  }
+}
+
+.companions__flags-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.companions__text-level {
+  @include font-param(400, 14px, $BloggerSans, 0, 14px);
+  border-top: 1px solid rgba($color: white, $alpha: 0.3);
+  padding-top: 3px;
+}
