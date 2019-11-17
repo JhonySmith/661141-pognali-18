@@ -1,0 +1,25 @@
+.about {
+  padding-top: 33px;
+  padding-bottom: 85px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: url("../img/about-mobile@1x.png") no-repeat -8px bottom;
+}
+
+.about--bg-color {
+  background-color: $dark-blue-lighter;
+}
+
+.about__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  width: 220px;
+  margin-bottom: 25px;
+}
+
+.about_comment {
+  width: 220px;
+}
