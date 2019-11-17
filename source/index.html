@@ -8,40 +8,53 @@
 </head>
 
 <body>
-  <div class="header-bg">
-    <header class="page-header fixed">
-      <div class="page-header__menu-and-logo-wraper">
-        <a class="page-header__logo logo">
-          <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?" />
+
+  <header class="page-header page-header--bg-color page-header--bg-picture fixed">
+
+    <div class="page-header__menu-and-logo-wraper">
+      <a class="page-header__logo logo">
+        <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle button-toggle" aria-label="Меню"></button>
+      </nav>
+    </div>
+
+    <b class="page-header__slogan">В путешествие с крутыми попутчиками</b>
+
+    <ul class="user-buttons">
+      <li class="user-buttons__item">
+        <a class="user-buttons__phone" href=" tel:+7800558628">
+          <span class="visually-hidden">+7800558628</span>
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle button-toggle" aria-label="Меню"></button>
-        </nav>
-      </div>
-      <b class="page-header__slogan">В путешествие с крутыми попутчиками</b>
-      <ul class="user-buttons">
-        <li class="user-buttons__item">
-          <a class="user-buttons__phone" href=" tel:+7800558628"></a>
-        </li>
-        <li class="user-buttons__item">
-          <a class="user-buttons__email" href=" mailto:mail@htmlacademy.ru"></a>
-        </li>
-        <li class="user-buttons__item">
-          <a class="user-buttons__user-in" href="#">Авторизация</a>
-        </li>
-      </ul>
-      <section class="page-header__review">
-        <p class="page-header__review-text page-header__review-text--white content-about">
-          "Лучшее приложение, что я видел в жизни!"
-        </p>
-        <b class="page-header__review-author page-header__review-author--white content-comment">Мурат Эльтазин главный
-          редактор газеты "гаджетлайф"</b>
-      </section>
-    </header>
-  </div>
-  <main class="page-main fixed">
+      </li>
+      <li class="user-buttons__item">
+        <a class="user-buttons__email" href=" mailto:mail@htmlacademy.ru">
+          <span class="visually-hidden">mail@htmlacademy.ru</span>
+        </a>
+      </li>
+      <li class="user-buttons__item">
+        <a class="user-buttons__user-in" href="#">Авторизация</a>
+      </li>
+    </ul>
+
+    <section class="page-header__review">
+      <p class="page-header__review-text page-header__review-text--white content-about">
+        "Лучшее приложение, что я видел в жизни!"
+      </p>
+      <b class="page-header__review-author page-header__review-author--white content-comment">
+        Мурат Эльтазин главный
+        редактор газеты "гаджетлайф"
+      </b>
+    </section>
+
+  </header>
+
+  <main class="page-main">
+
     <h1 class="visually-hidden">Приложение "Погнали?"</h1>
-    <section class="official-menu">
+
+    <section class="official-menu official-menu--bg-darkblue fixed">
       <h2 class="visually-hidden">Служебное меню</h2>
       <ol class="official-menu__list">
         <li class="official-menu__item">
@@ -66,6 +79,7 @@
         </li>
       </ol>
     </section>
+
     <section class="about">
       <h2 class="about__title section-title">
         О сервисе

@@ -1,4 +1,12 @@
 $BloggerSans: "BloggerSans", "Arial", "Helvetica", sans-serif;
+$dark-blue: #161c36;
+$dark-blue-lighter: #192144;
+$white: #ffffff;
+$orange: #ff8d30;
+$orange-lighter: #ffa530;
+$yellow-darker: #ffbd30;
+$yellow: #ffd74b;
+
 
 @mixin font-param(
   $font-weight: 400,
@@ -18,10 +26,8 @@ $BloggerSans: "BloggerSans", "Arial", "Helvetica", sans-serif;
 @import "normalize.scss";
 @import "common-classes.scss";
 @import "blocks/page-header.scss";
-@import "blocks/official-menu.scss";
 @import "blocks/directions.scss";
 @import "blocks/companions.scss";
 @import "blocks/social.scss";
 @import "blocks/feedback.scss";
-
 @import "pages/index.scss"

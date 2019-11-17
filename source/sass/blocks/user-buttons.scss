@@ -1,7 +1,3 @@
-$color-orange: #ff8d30;
-$color-orange-middle: #ffbd30;
-$color-orange-lighter: #ffd74b;
-
 .user-buttons {
   display: flex;
   justify-content: center;
@@ -21,7 +17,7 @@ $color-orange-lighter: #ffd74b;
   border-radius: 50%;
 
   background-image: url("../img/topmenu-phone.svg");
-  background-color: $color-orange;
+  background-color: $orange;
   background-size: 18px;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,7 +31,7 @@ $color-orange-lighter: #ffd74b;
   border-radius: 50%;
 
   background-image: url("../img/topmenu-mail.svg");
-  background-color: $color-orange-middle;
+  background-color: $yellow-darker;
   background-size: 18px;
   background-repeat: no-repeat;
   background-position: center;
@@ -50,10 +46,10 @@ $color-orange-lighter: #ffd74b;
   height: 40px;
   border-radius: 20px;
 
-  background-color: $color-orange-lighter;
+  background-color: $yellow;
 
   @include font-param(700, 17px, $BloggerSans, 0, 30px);
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: $dark-blue;
 }

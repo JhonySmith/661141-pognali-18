@@ -3,13 +3,14 @@
   padding-bottom: 33px;
 }
 
-.page-header__slogan {
-  display: flex;
-  text-align: center;
-  margin-top: 51px;
+.page-header--bg-picture {
+  background:
+    url("../img/traveller-illustration-mobile@1x.png") no-repeat center,
+    url("../img/globe-back-mobile@1x.jpg") no-repeat center top;
+}
 
-  @include font-param(700, 36px, $BloggerSans, 0, 40px);
-  color: white;
+.page-header--bg-color {
+  background-color: $dark-blue;
 }
 
 .page-header__menu-and-logo-wraper {
@@ -17,20 +18,31 @@
   justify-content: space-between;
 }
 
+.page-header__slogan {
+  display: flex;
+  text-align: center;
+  margin-top: 51px;
+
+  @include font-param(700, 36px, $BloggerSans, 0, 40px);
+  color: $white;
+}
+
 .page-header__review-author {
   display: block;
   width: 155px;
-}
-
-.page-header__review-text--white {
-  color: white;
+  margin-left: 25px;
 }
 
 .page-header__review-author--white {
-  color: white;
+  color: $white;
 }
 
 .page-header__review-text {
   width: 150px;
   margin-bottom: 30px;
+  margin-left: 25px;
+}
+
+.page-header__review-text--white {
+  color: $white;
 }
