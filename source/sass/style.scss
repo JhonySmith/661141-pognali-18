@@ -18,9 +18,10 @@ $BloggerSans: "BloggerSans", "Arial", "Helvetica", sans-serif;
 @import "normalize.scss";
 @import "common-classes.scss";
 @import "blocks/page-header.scss";
-@import "blocks/user-buttons.scss";
 @import "blocks/official-menu.scss";
 @import "blocks/directions.scss";
 @import "blocks/companions.scss";
 @import "blocks/social.scss";
 @import "blocks/feedback.scss";
+
+@import "pages/index.scss"

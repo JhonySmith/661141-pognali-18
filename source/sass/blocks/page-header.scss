@@ -1,7 +1,36 @@
+.page-header {
+  padding-top: 27px;
+  padding-bottom: 33px;
+}
+
 .page-header__slogan {
-  font-weight: 700;
-  font-size: 36px;
-  font-family: $BloggerSans;
-  letter-spacing: 0;
-  line-height: 40px;
+  display: flex;
+  text-align: center;
+  margin-top: 51px;
+
+  @include font-param(700, 36px, $BloggerSans, 0, 40px);
+  color: white;
+}
+
+.page-header__menu-and-logo-wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__review-author {
+  display: block;
+  width: 155px;
+}
+
+.page-header__review-text--white {
+  color: white;
+}
+
+.page-header__review-author--white {
+  color: white;
+}
+
+.page-header__review-text {
+  width: 150px;
+  margin-bottom: 30px;
 }

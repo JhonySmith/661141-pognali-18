@@ -13,6 +13,11 @@
   overflow: hidden;
 }
 
+.fixed {
+  width: 270px;
+  margin: 0 auto;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 24px;
@@ -69,4 +74,10 @@
 
 .block-title {
   @include font-param(700, 21px, $BloggerSans, 0, 21px);
+}
+
+.header-bg {
+  background:
+    url("../img/traveller-illustration-mobile@1x.png") no-repeat center,
+    url("../img/globe-back-mobile@1x.jpg") no-repeat center top #161c36;
 }
