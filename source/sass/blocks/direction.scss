@@ -1,3 +1,28 @@
+.directions {
+  padding-top: 70px;
+}
+
+.directions--bg-color {
+  background-color: $light-blue;
+}
+
+.directions__title {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+.directions__list {
+  padding: 0;
+}
+
+.directions__about {
+  width: 200px;
+  margin-bottom: 66px;
+  padding-left: 25px;
+}
+
+
 .directions__list {
   list-style-type: none;
 }
@@ -92,4 +117,8 @@
     background: url("../img/user.svg") no-repeat center;
     opacity: 0.1;
   }
+}
+
+.directions__item-wraper--half-transparent {
+  background: linear-gradient(to bottom, $white 30%, transparent 84%);
 }

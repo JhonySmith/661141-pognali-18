@@ -1,6 +1,7 @@
 $BloggerSans: "BloggerSans", "Arial", "Helvetica", sans-serif;
 $dark-blue: #161c36;
 $dark-blue-lighter: #192144;
+$light-blue: #edeff6;
 $white: #ffffff;
 $orange: #ff8d30;
 $orange-lighter: #ffa530;
@@ -26,7 +27,6 @@ $yellow: #ffd74b;
 @import "normalize.scss";
 @import "common-classes.scss";
 @import "blocks/page-header.scss";
-@import "blocks/directions.scss";
 @import "blocks/companions.scss";
 @import "blocks/social.scss";
 @import "blocks/feedback.scss";
