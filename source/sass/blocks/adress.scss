@@ -1,0 +1,23 @@
+.adress {
+  background-color: $yellow;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.adress__text {
+  @include font-param(700, 16px, $BloggerSans, 0, 22px);
+}
+
+.adress__text--dark-blue {
+  color: $dark-blue;
+}
+
+.adress__iframe {
+  position: absolute;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -25px;
+  z-index: -1;
+}

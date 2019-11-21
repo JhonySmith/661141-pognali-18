@@ -1,5 +1,14 @@
+.feedback {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.feedback--bg-color {
+  background-color: $dark-blue;
+}
+
 .feedback__title {
-  color: #ff8d30;
+  margin: 0;
 }
 
 .feedback__auth-link {
@@ -18,12 +27,19 @@
   @include font-param(700, 18px, $BloggerSans, 0, 18px);
 }
 
+.feedback__form {
+  position: relative;
+}
+
 .feedback__button-submit {
+  position: absolute;
+  top: 0px;
+  left: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60px;
-  height: 62px;
+  height: 64px;
   background: #f0cb4b;
   border-width: 0;
   border-radius: 10px;
