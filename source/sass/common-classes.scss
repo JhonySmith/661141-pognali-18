@@ -20,17 +20,42 @@
   margin: 0 auto;
 }
 
+.bordered-bottom-section {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.bordered-top-section {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.page-title {
+
+  @include font-param(700, 36px, $BloggerSans, 0, 40px);
+}
+
+.page-title--white {
+  color: white;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 24px;
   font-family: $BloggerSans;
   letter-spacing: 0;
   line-height: 24px;
+  margin: 0;
 }
 
 .section-title--orange {
   color: $orange;
 }
+
+.section-title--dark-blue {
+  color: $dark-blue;
+}
+
 
 .content-about {
   font-weight: 300;

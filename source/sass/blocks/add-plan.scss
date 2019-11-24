@@ -1,0 +1,147 @@
+.add-plan {
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
+.add-plan--bg-color {
+  background-color: #edeff6;
+}
+
+.add-plan__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.add-plan__form {
+  padding: 25px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.add-plan__form-title {
+
+  @include font-param(700, 20px, $BloggerSans, 0, 20px);
+  color: $dark-blue;
+}
+
+.add-plan__form-info {
+
+  @include font-param(400, 16px, $BloggerSans, 0, 22px);
+  color: #444444;
+  width: 217px;
+}
+
+.add-plan__number-input {
+  position: relative;
+}
+
+.add-plan__more-button {
+  position: absolute;
+  right: 13px;
+  width: 14px;
+  height: 14px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/qty-plus-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.add-plan__number-input {
+  display: flex;
+  align-items: center;
+}
+
+.add-plan__less-button {
+  position: absolute;
+  left: 14px;
+  width: 14px;
+  height: 14px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/qty-minus-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.add-plan__counter-label {
+  display: flex;
+  justify-content: space-between;
+
+  @include font-param(500, 16px, $BloggerSans, 0.1pt , 16px);
+  text-transform: uppercase;
+  color: $dark-blue;
+}
+
+.add-plan__counter-label--opacity {
+  opacity: 0.3;
+}
+
+.add-plan__number-input-text {
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  width: 220px;
+  height: 41px;
+
+  @include font-param(500, 15px, $BloggerSans, 0.1pt , 14px);
+  text-align: center;
+  color: $dark-blue;
+}
+
+.add-plan__with-children label {
+  display: flex;
+  align-items: center;
+  @include font-param(400, 14px, $BloggerSans, 0, 14px);
+  color: #444444;
+  &::before {
+    margin-right: 14px;
+    cursor: pointer;
+  }
+}
+
+.add-plan__with-children input[type="checkbox"] {
+
+  &:checked + label::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+  background-image: url("../img/tick.svg");
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+  & + label::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    border: 1px solid #cbced9;
+    background-size: 9px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+}
+
+.add-plan__next-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border-radius: 20px;
+  background-color: $yellow;
+
+  @include font-param(700, 17px, $BloggerSans, 0, 30px);
+  text-decoration: none;
+  color: $dark-blue;
+  text-transform: uppercase;
+}

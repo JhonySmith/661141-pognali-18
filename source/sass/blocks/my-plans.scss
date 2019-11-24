@@ -1,0 +1,43 @@
+.my-plans {
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.my-plans--bg-color {
+  background-color: #dfe3f0;
+}
+
+.my-plans__list {
+  padding-left: 0;
+
+  list-style-type: none;
+}
+
+.my-plans__item {
+  margin-bottom: 10px;
+  padding: 25px;
+  border-radius: 10px;
+
+  background-color: white;
+}
+
+.my-plans__country {
+
+  @include font-param(700, 16px, $BloggerSans, 0, 16px);
+  color: $dark-blue;
+}
+
+.my-plans__info {
+
+  @include font-param(500, 14px, $BloggerSans, 1px, 20px);
+  color: $dark-blue;
+  text-transform: uppercase;
+}
+
+.my-plans__change-button {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include font-param(500, 14px, $BloggerSans, 1px, 20px);
+  color: rgba($color: #000000, $alpha: 0.3);
+}
