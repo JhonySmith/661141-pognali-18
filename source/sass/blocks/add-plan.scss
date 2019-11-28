@@ -123,7 +123,7 @@
     width: 26px;
     height: 26px;
     border-radius: 4px;
-    border: 1px solid #cbced9;
+    border: 1px solid ;
     background-size: 9px;
     background-repeat: no-repeat;
     background-position: center;
@@ -144,4 +144,71 @@
   text-decoration: none;
   color: $dark-blue;
   text-transform: uppercase;
+}
+
+.add-plan__back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  @include font-param(700, 17px, $BloggerSans, 0, 30px);
+  text-decoration: none;
+  color: $dark-blue;
+  text-transform: uppercase;
+}
+
+.add-plan__country {
+  position: relative;
+  display: flex;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 58px;
+    display: block;
+    width: 30px;
+    height: 38px;
+    background: url("../img/dropdown-form.svg") no-repeat center;
+    background-size: 12px;
+    background-color: white;
+    pointer-events: none;
+  }
+}
+
+.add-plan__form select {
+  height: 40px;
+  padding-left: 10px;
+  appearance: none;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  @include font-param(500, 14px, $BloggerSans, 0.1pt, 18px);
+  color: $dark-blue;
+  text-transform: uppercase;
+}
+
+.add-plan__country-flag {
+  display: block;
+  margin-left: -1px;
+  height: 38px;
+  width: 50px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.add-plan__form textarea {
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+  resize: none;
+
+  @include font-param(400, 16px, $BloggerSans, 0, 22px);
+}
+
+.add-plan__area-label {
+
+  @include font-param(500, 18px, $BloggerSans, 0, 18px);
+  color: $dark-blue;
 }
