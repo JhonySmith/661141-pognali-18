@@ -114,3 +114,7 @@
 .block-title {
   @include font-param(700, 21px, $BloggerSans, 0, 21px);
 }
+
+.main__bg--blue {
+  background-color: $light-blue;
+}
