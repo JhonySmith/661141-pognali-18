@@ -46,19 +46,19 @@
 
   &:nth-child(1) {
     &::after {
-    background-color: $orange;
+      background-color: $orange;
     }
   }
 
   &:nth-child(2) {
     &::after {
-    background-color: $orange-lighter;
+      background-color: $orange-lighter;
     }
   }
 
   &:nth-child(3) {
     &::after {
-    background-color: $yellow-darker;
+      background-color: $yellow-darker;
     }
   }
 

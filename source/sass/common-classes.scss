@@ -31,7 +31,6 @@
 }
 
 .page-title {
-
   @include font-param(700, 36px, $BloggerSans, 0, 40px);
 }
 
@@ -55,7 +54,6 @@
 .section-title--dark-blue {
   color: $dark-blue;
 }
-
 
 .content-about {
   font-weight: 300;

@@ -20,13 +20,11 @@
 }
 
 .add-plan__form-title {
-
   @include font-param(700, 20px, $BloggerSans, 0, 20px);
   color: $dark-blue;
 }
 
 .add-plan__form-info {
-
   @include font-param(400, 16px, $BloggerSans, 0, 22px);
   color: #444444;
   width: 217px;
@@ -34,6 +32,8 @@
 
 .add-plan__number-input {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .add-plan__more-button {
@@ -47,11 +47,6 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
-}
-
-.add-plan__number-input {
-  display: flex;
-  align-items: center;
 }
 
 .add-plan__less-button {
@@ -94,8 +89,10 @@
 .add-plan__with-children label {
   display: flex;
   align-items: center;
+
   @include font-param(400, 14px, $BloggerSans, 0, 14px);
   color: #444444;
+
   &::before {
     margin-right: 14px;
     cursor: pointer;
@@ -103,18 +100,17 @@
 }
 
 .add-plan__with-children input[type="checkbox"] {
-
   &:checked + label::before {
-  content: "";
-  display: block;
-  width: 26px;
-  height: 26px;
-  border-radius: 4px;
-  border: 1px solid #cbced9;
-  background-image: url("../img/tick.svg");
-  background-size: 9px;
-  background-repeat: no-repeat;
-  background-position: center;
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    border: 1px solid #cbced9;
+    background-image: url("../img/tick.svg");
+    background-size: 9px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   & + label::before {
@@ -123,11 +119,11 @@
     width: 26px;
     height: 26px;
     border-radius: 4px;
-    border: 1px solid ;
+    border: 1px solid;
     background-size: 9px;
     background-repeat: no-repeat;
     background-position: center;
-    }
+  }
 }
 
 .add-plan__next-button {
@@ -162,6 +158,7 @@
 .add-plan__country {
   position: relative;
   display: flex;
+
   &::after {
     content: "";
     position: absolute;
@@ -208,7 +205,6 @@
 }
 
 .add-plan__area-label {
-
   @include font-param(500, 18px, $BloggerSans, 0, 18px);
   color: $dark-blue;
 }
