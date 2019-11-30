@@ -47,3 +47,42 @@
   text-align: center;
   color: $dark-blue;
 }
+
+.companions-cards__visit-list {
+  padding-left: 0;
+}
+
+.companions-cards__visit-name-country {
+  @include font-param(500, 15px, $BloggerSans, 0, 18px);
+  color: $dark-blue;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.companions-cards__countries-flag {
+  margin-bottom: 5px;
+}
+
+.companions-cards__section-title {
+  @include font-param(400, 15px, $BloggerSans, 0, 18px);
+  position: absolute;
+  background-color: white;
+}
+
+.companions-cards__tranports-list-title {
+  top: -8px;
+}
+
+.companions-cards__visit-list-wraper {
+  position: relative;
+}
+
+.companions-cards__tranports-list-wraper {
+  position: relative;
+}
+
+.companions-cards__tranports-list {
+  display: flex;
+  padding-top: 15px;
+  border-top: 1px solid $light-blue;
+}

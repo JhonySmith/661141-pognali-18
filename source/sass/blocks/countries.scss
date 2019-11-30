@@ -1,0 +1,40 @@
+.countries-flag {
+  display: flex;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 18px;
+  }
+}
+
+.countries-flag--shri-lanka {
+  &::before {
+    background: url("../img/sri-lanka_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--thailand {
+  &::before {
+    background: url("../img/thailand_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--seishel {
+  &::before {
+    background: url("../img/seychelles_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--belgium {
+  &::before {
+    background: url("../img/belgium_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--czech {
+  &::before {
+    background: url("../img/czech_flag.png") no-repeat center;
+  }
+}
