@@ -14,10 +14,11 @@
 }
 
 .fixed {
-  width: 270px;
+  width: 320px;
   padding-left: 25px;
   padding-right: 25px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .bordered-bottom-section {
@@ -115,4 +116,20 @@
 
 .main__bg--blue {
   background-color: $light-blue;
+}
+
+.substrate {
+  padding: 0;
+}
+
+.substrate--light-blue {
+  background-color: $light-blue;
+}
+
+.substrate--dark-blue {
+  background-color: $dark-blue;
+}
+
+.substrate--yellow {
+  background-color: $yellow;
 }
