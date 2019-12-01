@@ -38,3 +38,33 @@
     background: url("../img/czech_flag.png") no-repeat center;
   }
 }
+
+.countries-flag--usa {
+  &::before {
+    background: url("../img/usa_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--australia {
+  &::before {
+    background: url("../img/australia_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--dominikana {
+  &::before {
+    background: url("../img/dominikana_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--united-kindom {
+  &::before {
+    background: url("../img/united-kindom_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--germany {
+  &::before {
+    background: url("../img/germany_flag.png") no-repeat center;
+  }
+}

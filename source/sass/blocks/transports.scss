@@ -1,4 +1,4 @@
-.transports_item {
+.transports__item {
   display: block;
   width: 32px;
   height: 32px;
@@ -19,35 +19,35 @@
   }
 }
 
-.transports_item--plane {
+.transports__item--plane {
   &::before {
     background-image: url("../img/plane.svg");
     background-size: 14px 16px;
   }
 }
 
-.transports_item--bus {
+.transports__item--bus {
   &::before {
     background-image: url("../img/bus.svg");
     background-size: 13px 16px;
   }
 }
 
-.transports_item--bike {
+.transports__item--bike {
   &::before {
     background-image: url("../img/bike.svg");
     background-size: 19px 17px;
   }
 }
 
-.transports_item--run {
+.transports__item--run {
   &::before {
     background-image: url("../img/run.svg");
     background-size: 15px 17px;
   }
 }
 
-.transports_item--active {
+.transports__item--active {
   &::before {
     opacity: 1;
   }
