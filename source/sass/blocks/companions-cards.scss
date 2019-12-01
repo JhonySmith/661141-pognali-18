@@ -36,6 +36,7 @@
 
 .companions-cards__button-call {
   display: block;
+  margin-top: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: $yellow;
@@ -75,6 +76,13 @@
 
 .companions-cards__visit-list-wraper {
   position: relative;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid $light-blue;
+}
+
+.companions-cards__visit-list-title {
+  top: -9px;
 }
 
 .companions-cards__tranports-list-wraper {
@@ -83,6 +91,33 @@
 
 .companions-cards__tranports-list {
   display: flex;
-  padding-top: 15px;
+  padding-top: 25px;
   border-top: 1px solid $light-blue;
+  padding-left: 0;
+}
+
+.companions-cards__lvl-wraper {
+  position: relative;
+  border-top: 1px solid $light-blue;
+  padding-top: 15px;
+}
+
+.companions-cards__flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.companions-cards__lvl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+
+  @include font-param(700, 24px, $BloggerSans, 0, 18px);
+  color: $dark-blue;
+}
+
+.companions-cards__lvl-title {
+  top: -8px;
 }
