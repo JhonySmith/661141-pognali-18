@@ -1,0 +1,70 @@
+.countries-flag {
+  display: flex;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 18px;
+  }
+}
+
+.countries-flag--shri-lanka {
+  &::before {
+    background: url("../img/sri-lanka_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--thailand {
+  &::before {
+    background: url("../img/thailand_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--seishel {
+  &::before {
+    background: url("../img/seychelles_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--belgium {
+  &::before {
+    background: url("../img/belgium_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--czech {
+  &::before {
+    background: url("../img/czech_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--usa {
+  &::before {
+    background: url("../img/usa_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--australia {
+  &::before {
+    background: url("../img/australia_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--dominikana {
+  &::before {
+    background: url("../img/dominikana_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--united-kindom {
+  &::before {
+    background: url("../img/united-kindom_flag.png") no-repeat center;
+  }
+}
+
+.countries-flag--germany {
+  &::before {
+    background: url("../img/germany_flag.png") no-repeat center;
+  }
+}

@@ -1,0 +1,40 @@
+.user-lvl {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: block;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    border-top: 2px solid transparent;
+    border-left: 2px solid #ff8d30;
+    border-right: 2px solid #ff8d30;
+    border-bottom: 2px solid #ff8d30;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: block;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    border-top: 2px solid transparent;
+    border-left: 2px solid #ff8d30;
+    border-right: 2px solid #ff8d30;
+    border-bottom: 2px solid #ff8d30;
+    transform: rotate(-45deg);
+  }
+}
+
+.user-lvl--99lvl {
+  &::after {
+    transform: rotate(40deg);
+  }
+}

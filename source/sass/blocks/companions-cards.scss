@@ -1,0 +1,123 @@
+.companions-cards__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.companions-cards__item {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.companions-cards__fio {
+  margin: 0;
+
+  @include font-param(700, 20px, $BloggerSans, 0, 20px);
+  color: $dark-blue;
+}
+
+.companions-cards__likes {
+  @include font-param(700, 14px, $BloggerSans, 0, 21px);
+  color: $dark-blue;
+}
+
+.companions-cards__hashtags {
+  @include font-param(400, 15px, $BloggerSans, 0, 18px);
+  color: #444444;
+}
+
+.companions-cards__photo {
+  border-radius: 50%;
+}
+
+.companions-cards__button-call {
+  display: block;
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: $yellow;
+  border-radius: 20px;
+
+  @include font-param(700, 17px, $BloggerSans, 0, 30px);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $dark-blue;
+}
+
+.companions-cards__visit-list {
+  padding-left: 0;
+}
+
+.companions-cards__visit-name-country {
+  @include font-param(500, 15px, $BloggerSans, 0, 18px);
+  color: $dark-blue;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.companions-cards__countries-flag {
+  margin-bottom: 5px;
+}
+
+.companions-cards__section-title {
+  @include font-param(400, 15px, $BloggerSans, 0, 18px);
+  position: absolute;
+  background-color: white;
+}
+
+.companions-cards__tranports-list-title {
+  top: -8px;
+}
+
+.companions-cards__visit-list-wraper {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid $light-blue;
+}
+
+.companions-cards__visit-list-title {
+  top: -9px;
+}
+
+.companions-cards__tranports-list-wraper {
+  position: relative;
+}
+
+.companions-cards__tranports-list {
+  display: flex;
+  padding-top: 25px;
+  border-top: 1px solid $light-blue;
+  padding-left: 0;
+}
+
+.companions-cards__lvl-wraper {
+  position: relative;
+  border-top: 1px solid $light-blue;
+  padding-top: 15px;
+}
+
+.companions-cards__flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.companions-cards__lvl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+
+  @include font-param(700, 24px, $BloggerSans, 0, 18px);
+  color: $dark-blue;
+}
+
+.companions-cards__lvl-title {
+  top: -8px;
+}

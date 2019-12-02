@@ -1,0 +1,181 @@
+.personal-info--bg-color {
+  background-color: $light-blue;
+}
+
+.personal-info__level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+  background-color: transparent;
+
+  color: $dark-blue;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    display: block;
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    border-top: 3px solid transparent;
+    border-left: 3px solid #ff8d30;
+    border-right: 3px solid #ff8d30;
+    border-bottom: 3px solid #ff8d30;
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    display: block;
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    border-top: 3px solid transparent;
+    border-left: 3px solid #ff8d30;
+    border-right: 3px solid #ff8d30;
+    border-bottom: 3px solid #ff8d30;
+  }
+
+  @include font-param(700, 38px, $BloggerSans, 0, 38px);
+}
+
+.personal-info__level--80 {
+  &::before {
+    transform: rotate(-20deg);
+  }
+}
+
+.personal-info__text-level {
+  @include font-param(400, 18px, $BloggerSans, 0, 22px);
+  border-top: 1px solid #cbced9;
+  padding-top: 3px;
+}
+
+.personal-info__photo {
+  border-radius: 50%;
+}
+
+.personal-info__photo-lvl-wraper {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.personal-info__change-photo-button {
+  display: block;
+  width: 270px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+
+  @include font-param(700, 17px, $BloggerSans, 0, 30px);
+  color: $dark-blue;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: #dfe3f0;
+}
+
+.presonal-info__hashtags {
+  position: relative;
+  padding: 25px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  @include font-param(400, 16px, $BloggerSans, 0, 22px);
+  color: #444444;
+}
+
+.personal-info__group-title {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -15%;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  background-color: $light-blue;
+
+  @include font-param(700, 16px, $BloggerSans, 0, 18px);
+  text-transform: uppercase;
+  color: $dark-blue;
+}
+
+.personal-info__transport {
+  position: relative;
+
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+}
+
+.personal-info__transports-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.personal-info__transports-item {
+  background-color: white;
+  width: 32.25px;
+  height: 32.25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+  }
+}
+
+.personal-info__transports-item--airplane {
+  &::before {
+    width: 14px;
+    height: 16px;
+    background-image: url("../img/plane.svg");
+  }
+}
+
+.personal-info__transports-item--bus {
+  &::before {
+    width: 13px;
+    height: 16px;
+    background-image: url("../img/bus.svg");
+  }
+}
+
+.personal-info__transports-item--bicycle {
+  &::before {
+    width: 19px;
+    height: 17px;
+    background-image: url("../img/bike.svg");
+  }
+}
+
+.personal-info__transports-item--foot {
+  &::before {
+    width: 15px;
+    height: 17px;
+    background-image: url("../img/run.svg");
+  }
+}
+
+.personal-info__transports-item--active {
+  &::before {
+    opacity: 0.15;
+  }
+}

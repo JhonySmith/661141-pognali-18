@@ -1,47 +1,55 @@
-.user-buttons__item {
-  list-style: none;
+.user-buttons {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 235px;
+  margin-bottom: 30px;
+  padding-left: 0;
+
+  list-style-type: none;
 }
 
 .user-buttons__phone {
   display: block;
+
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+
   background-image: url("../img/topmenu-phone.svg");
+  background-color: $orange;
   background-size: 18px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #ff8d30;
-  border-radius: 50%;
 }
 
 .user-buttons__email {
   display: block;
+
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+
   background-image: url("../img/topmenu-mail.svg");
+  background-color: $yellow-darker;
   background-size: 18px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #ffbd30;
-  border-radius: 50%;
 }
 
 .user-buttons__user-in {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 189px;
   height: 40px;
-  background-color: #ffd74b;
   border-radius: 20px;
 
+  background-color: $yellow;
+
+  @include font-param(700, 17px, $BloggerSans, 0, 30px);
   text-decoration: none;
   text-transform: uppercase;
-
-  font-weight: 700;
-  font-size: 17px;
-  font-family: $BloggerSans;
-  letter-spacing: 0;
-  line-height: 30px;
-  color: black;
+  color: $dark-blue;
 }

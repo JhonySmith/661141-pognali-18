@@ -4,17 +4,21 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header class="page-header">
-    <a class="page-header__logo logo">
-      <img src="https://via.placeholder.com/100x19" width="100" height="19" alt="Погнали?">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle">Открыть меню</button>
-    </nav>
-    <h1 class="page-header__title">Попутчики</h1>
+<body class="main__bg--blue">
+  <header class="page-header page-header--bg-color fixed">
+
+    <div class="page-header__menu-and-logo-wraper">
+      <a href="index.html" class="page-header__logo logo">
+        <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle button-toggle" aria-label="Меню"></button>
+      </nav>
+    </div>
+    <h1 class="page-header__title page-title page-title--white">Попутчики</h1>
   </header>
 
   <main class="page-main">
@@ -85,7 +89,7 @@
 
     <section class="companions-cards">
       <h2 class="visually-hidden">Список попутчиков</h2>
-      <ul class="companions-cards__list">
+      <ul class="companions-cards__list fixed">
         <li class="companions-cards__item">
           <h3 class="companions-cards__fio">Таня Фирсова</h3>
           <img class="companions-cards__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
@@ -93,34 +97,37 @@
           <span class="companions-cards__likes">1.5 М</span>
           <p class="companions-cards__hashtags">#ЗОЖ #ПП #Фитнес #пляж
             #авокадо #смузи</p>
-          <span class="companions-cards__section-title">хочет посетить:</span>
-          <ul class="companions-cards__visit-list">
-            <li class="companions-cards__visit-item">
-              <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
-                height="24" alt="Шри-Ланка">
-              <h4 class="companions-cards__visit-name-country">Шри-Ланка</h4>
-            </li>
-            <li class="companions-cards__visit-item">
-              <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
-                height="24" alt="Тайланд">
-              <h4 class="companions-cards__visit-name-country">Тайланд</h4>
-            </li>
-            <li class="companions-cards__visit-item">
-              <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
-                height="24" alt="Сейшелы">
-              <h4 class="companions-cards__visit-name-country">Сейшелы</h4>
-            </li>
-          </ul>
-          <span class="companions-cards__section-title">транспорт:</s>
-            <ul class="companions-cards__tranports-list">
-              <li class="companions-cards__tranports-item">Самолет</li>
-              <li class="companions-cards__tranports-item">Автобус</li>
-              <li class="companions-cards__tranports-item">Велосипед</li>
-              <li class="companions-cards__tranports-item">Пешком</li>
+          <div class="companions-cards__visit-list-wraper">
+            <span class="companions-cards__visit-list-title companions-cards__section-title">хочет посетить:</span>
+            <ul class="companions-cards__visit-list">
+              <li class="companions-cards__countries-flag countries-flag countries-flag--shri-lanka">
+                <h4 class="companions-cards__visit-name-country">Шри-Ланка</h4>
+              </li>
+              <li class="companions-cards__countries-flag countries-flag countries-flag--thailand">
+                <h4 class="companions-cards__visit-name-country">Тайланд</h4>
+              </li>
+              <li class="companions-cards__countries-flag countries-flag countries-flag--seishel">
+                <h4 class="companions-cards__visit-name-country">Сейшелы</h4>
+              </li>
             </ul>
-            <span class="companions-cards__section-title">левел:</span>
-            <span class="companions-cards__lvl">99</span>
-            <a href="#" class="companions-cards__button-call">Позвать!</a>
+          </div>
+          <div class="companions-cards__flex-container">
+            <div class="companions-cards__tranports-list-wraper">
+              <span class="companions-cards__tranports-list-title companions-cards__section-title">транспорт:</span>
+              <ul class="companions-cards__tranports-list transports">
+                <li class="transports__item transports__item--plane transports__item--active"><span
+                    class="visually-hidden">Самолет</span></li>
+                <li class="transports__item transports__item--bus"><span class="visually-hidden">Автобус</span></li>
+                <li class="transports__item transports__item--bike"><span class="visually-hidden">Велосипед</span></li>
+                <li class="transports__item transports__item--run"><span class="visually-hidden">Пешком</span></li>
+              </ul>
+            </div>
+            <div class="companions-cards__lvl-wraper">
+              <span class="companions-cards__lvl-title companions-cards__section-title">левел:</span>
+              <span class="companions-cards__lvl user-lvl user-lvl--99lvl">99</span>
+            </div>
+          </div>
+          <a href="#" class="companions-cards__button-call">Позвать!</a>
         </li>
         <li class="companions-cards__item">
           <h3 class="companions-cards__fio">Петя Демин</h3>
@@ -129,28 +136,35 @@
           <span class="companions-cards__likes">150</span>
           <p class="companions-cards__hashtags">#бургер #бар #футбол
             #концерт #крафт</p>
-          <span class="companions-cards__section-title">хочет посетить:</span>
-          <ul class="companions-cards__visit-list">
-            <li class="companions-cards__visit-item">
-              <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
-                height="24" alt="Бельгия">
-              <h4 class="companions-cards__visit-name-country">Бельгия</h4>
-            </li>
-            <li class="companions-cards__visit-item">
-              <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
-                height="24" alt="Чехия">
-              <h4 class="companions-cards__visit-name-country">Чехия</h4>
-            </li>
-          </ul>
-          <span class="companions-cards__section-title">транспорт:</span>
-          <ul class="companions-cards__tranports-list">
-            <li class="companions-cards__tranports-item">Самолет</li>
-            <li class="companions-cards__tranports-item">Автобус</li>
-            <li class="companions-cards__tranports-item">Велосипед</li>
-            <li class="companions-cards__tranports-item">Пешком</li>
-          </ul>
-          <span class="companions-cards__section-title">левел:</span>
-          <span class="companions-cards__lvl">80</span>
+          <div class="companions-cards__visit-list-wraper">
+            <span class="companions-cards__visit-list-title companions-cards__section-title">хочет посетить:</span>
+            <ul class="companions-cards__visit-list">
+              <li class="companions-cards__countries-flag countries-flag countries-flag--belgium">
+                <h4 class="companions-cards__visit-name-country">Бельгия</h4>
+              </li>
+              <li class="companions-cards__countries-flag countries-flag countries-flag--czech">
+                <h4 class="companions-cards__visit-name-country">Чехия</h4>
+              </li>
+            </ul>
+          </div>
+          <div class="companions-cards__flex-container">
+            <div class="companions-cards__tranports-list-wraper">
+              <span class="companions-cards__tranports-list-title companions-cards__section-title">транспорт:</span>
+              <ul class="companions-cards__tranports-list transports">
+                <li class="transports__item transports__item--plane transports__item--active"><span
+                    class="visually-hidden">Самолет</span></li>
+                <li class="transports__item transports__item--bus transports__item--active"><span
+                    class="visually-hidden">Автобус</span></li>
+                <li class="transports__item transports__item--bike"><span class="visually-hidden">Велосипед</span></li>
+                <li class="transports__item transports__item--run transports__item--active"><span
+                    class="visually-hidden">Пешком</span></li>
+              </ul>
+            </div>
+            <div class="companions-cards__lvl-wraper">
+              <span class="companions-cards__lvl-title companions-cards__section-title">левел:</span>
+              <span class="companions-cards__lvl user-lvl user-lvl--99lvl">80</span>
+            </div>
+          </div>
           <a href="#" class="companions-cards__button-call">Позвать!</a>
         </li>
         <li class="companions-cards__item">
@@ -160,33 +174,37 @@
           <span class="companions-cards__likes">1700</span>
           <p class="companions-cards__hashtags">#рэп #тату #хайпбист
             #кроссовки #суприм</p>
-          <span class="companions-cards__section-title">хочет посетить:</span>
-          <ul class="companions-cards__visit-list">
-            <li class="companions-cards__visit-item">
-              <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
-                height="24" alt="США">
-              <h4 class="companions-cards__visit-name-country">США</h4>
-            </li>
-            <li class="companions-cards__visit-item">
-              <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
-                height="24" alt="Австралия">
-              <h4 class="companions-cards__visit-name-country">Австралия</h4>
-            </li>
-            <li class="companions-cards__visit-item">
-              <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
-                height="24" alt="Доминикана">
-              <h4 class="companions-cards__visit-name-country">Доминикана</h4>
-            </li>
-          </ul>
-          <span class="companions-cards__section-title">транспорт:</span>
-          <ul class="companions-cards__tranports-list">
-            <li class="companions-cards__tranports-item">Самолет</li>
-            <li class="companions-cards__tranports-item">Автобус</li>
-            <li class="companions-cards__tranports-item">Велосипед</li>
-            <li class="companions-cards__tranports-item">Пешком</li>
-          </ul>
-          <span class="companions-cards__section-title">левел:</span>
-          <span class="companions-cards__lvl">25</span>
+          <div class="companions-cards__visit-list-wraper">
+            <span class="companions-cards__visit-list-title companions-cards__section-title">хочет посетить:</span>
+            <ul class="companions-cards__visit-list">
+              <li class="companions-cards__countries-flag countries-flag countries-flag--usa">
+                <h4 class="companions-cards__visit-name-country">США</h4>
+              </li>
+              <li class="companions-cards__countries-flag countries-flag countries-flag--australia">
+                <h4 class="companions-cards__visit-name-country">Австралия</h4>
+              </li>
+              <li class="companions-cards__countries-flag countries-flag countries-flag--dominikana">
+                <h4 class="companions-cards__visit-name-country">Доминикана</h4>
+              </li>
+            </ul>
+          </div>
+          <div class="companions-cards__flex-container">
+            <div class="companions-cards__tranports-list-wraper">
+              <span class="companions-cards__tranports-list-title companions-cards__section-title">транспорт:</span>
+              <ul class="companions-cards__tranports-list transports">
+                <li class="transports__item transports__item--plane transports__item--active"><span
+                    class="visually-hidden">Самолет</span></li>
+                <li class="transports__item transports__item--bus"><span class="visually-hidden">Автобус</span></li>
+                <li class="transports__item transports__item--bike transports__item--active"><span
+                    class="visually-hidden">Велосипед</span></li>
+                <li class="transports__item transports__item--run"><span class="visually-hidden">Пешком</span></li>
+              </ul>
+            </div>
+            <div class="companions-cards__lvl-wraper">
+              <span class="companions-cards__lvl-title companions-cards__section-title">левел:</span>
+              <span class="companions-cards__lvl user-lvl user-lvl--99lvl">25</span>
+            </div>
+          </div>
           <a href="#" class="companions-cards__button-call">Позвать!</a>
         </li>
         <li class="companions-cards__item">
@@ -197,28 +215,34 @@
           <p class="companions-cards__hashtags">#образование #карьера
             #учеба #линкедин
           </p>
-          <span class="companions-cards__section-title">хочет посетить:</span>
-          <ul class="companions-cards__visit-list">
-            <li class="companions-cards__visit-item">
-              <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
-                height="24" alt="Великобритания">
-              <h4 class="companions-cards__visit-name-country">Великобритания</h4>
-            </li>
-            <li class="companions-cards__visit-item">
-              <img class="companions-cards__visit-img-country" src="https://via.placeholder.com/35x24" width="35"
-                height="24" alt="Германия">
-              <h4 class="companions-cards__visit-name-country">Германия</h4>
-            </li>
-          </ul>
-          <span class="companions-cards__section-title">транспорт:</span>
-          <ul class="companions-cards__tranports-list">
-            <li class="companions-cards__tranports-item">Самолет</li>
-            <li class="companions-cards__tranports-item">Автобус</li>
-            <li class="companions-cards__tranports-item">Велосипед</li>
-            <li class="companions-cards__tranports-item">Пешком</li>
-          </ul>
-          <span class="companions-cards__section-title">левел:</span>
-          <span class="companions-cards__lvl">50</span>
+          <div class="companions-cards__visit-list-wraper">
+            <span class="companions-cards__visit-list-title companions-cards__section-title">хочет посетить:</span>
+            <ul class="companions-cards__visit-list">
+              <li class="companions-cards__countries-flag countries-flag countries-flag--united-kindom">
+                <h4 class="companions-cards__visit-name-country">Великобритания</h4>
+              </li>
+              <li class="companions-cards__countries-flag countries-flag countries-flag--germany">
+                <h4 class="companions-cards__visit-name-country">Германия</h4>
+              </li>
+            </ul>
+          </div>
+          <div class="companions-cards__flex-container">
+            <div class="companions-cards__tranports-list-wraper">
+              <span class="companions-cards__tranports-list-title companions-cards__section-title">транспорт:</span>
+              <ul class="companions-cards__tranports-list transports">
+                <li class="transports__item transports__item--plane transports__item--active"><span
+                    class="visually-hidden">Самолет</span></li>
+                <li class="transports__item transports__item--bus transports__item--active"><span
+                    class="visually-hidden">Автобус</span></li>
+                <li class="transports__item transports__item--bike"><span class="visually-hidden">Велосипед</span></li>
+                <li class="transports__item transports__item--run"><span class="visually-hidden">Пешком</span></li>
+              </ul>
+            </div>
+            <div class="companions-cards__lvl-wraper">
+              <span class="companions-cards__lvl-title companions-cards__section-title">левел:</span>
+              <span class="companions-cards__lvl user-lvl user-lvl--99lvl">50</span>
+            </div>
+          </div>
           <a href="#" class="companions-cards__button-call">Позвать!</a>
         </li>
       </ul>
@@ -230,34 +254,27 @@
   </main>
 
   <footer class="page-footer">
-      <a class="page-footer__logo logo">
-        <img
-          src="img/logo-mobile-blue@1x.png"
-          width="100"
-          height="19"
-          alt="Погнали?"
-        />
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--facebook"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--vk"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--instagram"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="button copyright__link" href="#"
-          ><span class="hidden">HTML Academy</span></a
-        >
-      </div>
-    </footer>
+    <a class="page-footer__logo logo">
+      <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?" />
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--facebook"></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--vk"></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--instagram"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="button copyright__link" href="#"><span class="hidden">HTML Academy</span></a>
+    </div>
+  </footer>
 
 </body>
 

@@ -1,5 +1,29 @@
+.directions {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.directions--bg-color {
+  background-color: $light-blue;
+}
+
+.directions__title {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
 .directions__list {
+  padding: 0;
   list-style-type: none;
+}
+
+.directions__about {
+  width: 200px;
+  margin-bottom: 66px;
+  padding-left: 25px;
 }
 
 .directions__item-link {
@@ -92,4 +116,8 @@
     background: url("../img/user.svg") no-repeat center;
     opacity: 0.1;
   }
+}
+
+.directions__item-wraper--half-transparent {
+  background: linear-gradient(to bottom, $white 30%, transparent 84%);
 }

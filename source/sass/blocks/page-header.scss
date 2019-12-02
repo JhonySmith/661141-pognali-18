@@ -1,7 +1,67 @@
+.page-header {
+  padding-top: 27px;
+}
+
+.page-header--bordered {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.page-header--bg-picture {
+  background:
+    url("../img/traveller-illustration-mobile@1x.png") no-repeat center,
+    url("../img/globe-back-mobile@1x.jpg") no-repeat center top;
+}
+
+.page-header--bg-color {
+  background-color: $dark-blue;
+}
+
+.page-header__title {
+  margin: 0;
+  margin-top: 60px;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 9px;
+    height: 5px;
+    width: auto;
+    border-radius: 2.39px;
+    background-color: $orange;
+  }
+}
+
+.page-header__menu-and-logo-wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-header__slogan {
-  font-weight: 700;
-  font-size: 36px;
-  font-family: $BloggerSans;
-  letter-spacing: 0;
-  line-height: 40px;
+  display: flex;
+  text-align: center;
+  margin-top: 51px;
+
+  @include font-param(700, 36px, $BloggerSans, 0, 40px);
+  color: $white;
+}
+
+.page-header__review-author {
+  display: block;
+  width: 155px;
+  margin-left: 25px;
+}
+
+.page-header__review-author--white {
+  color: $white;
+}
+
+.page-header__review-text {
+  width: 150px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+}
+
+.page-header__review-text--white {
+  color: $white;
 }

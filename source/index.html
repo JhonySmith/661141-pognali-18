@@ -1,104 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header class="page-header">
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="page-header page-header--bg-color page-header--bg-picture fixed">
+
+    <div class="page-header__menu-and-logo-wraper">
       <a class="page-header__logo logo">
-        <img
-          src="img/logo-mobile-white@1x.png"
-          width="100"
-          height="19"
-          alt="Погнали?"
-        />
+        <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?" />
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle button-toggle"></button>
+        <button class="main-nav__toggle button-toggle" aria-label="Меню"></button>
       </nav>
-      <b class="page-header__slogan">В путешествие с крутыми попутчиками</b>
-      <ul class="user-buttons">
-        <li class="user-buttons__item">
-          <a class="user-buttons__phone" href=" tel:+7800558628"></a>
+    </div>
+
+    <b class="page-header__slogan">В путешествие с крутыми попутчиками</b>
+
+    <ul class="user-buttons">
+      <li class="user-buttons__item">
+        <a class="user-buttons__phone" href=" tel:+7800558628">
+          <span class="visually-hidden">+7800558628</span>
+        </a>
+      </li>
+      <li class="user-buttons__item">
+        <a class="user-buttons__email" href=" mailto:mail@htmlacademy.ru">
+          <span class="visually-hidden">mail@htmlacademy.ru</span>
+        </a>
+      </li>
+      <li class="user-buttons__item">
+        <a class="user-buttons__user-in" href="#">Авторизация</a>
+      </li>
+    </ul>
+
+    <section class="page-header__review">
+      <p class="page-header__review-text page-header__review-text--white content-about">
+        "Лучшее приложение, что я видел в жизни!"
+      </p>
+      <b class="page-header__review-author page-header__review-author--white content-comment">
+        Мурат Эльтазин главный
+        редактор газеты "гаджетлайф"
+      </b>
+    </section>
+
+  </header>
+
+  <main class="page-main">
+
+    <h1 class="visually-hidden">Приложение "Погнали?"</h1>
+
+    <section class="official-menu official-menu--bg-darkblue fixed">
+      <h2 class="visually-hidden">Служебное меню</h2>
+      <ol class="official-menu__list">
+        <li class="official-menu__item">
+          <a class="official-menu_title" href="directions.html">
+            Выберите направление
+          </a>
         </li>
-        <li class="user-buttons__item">
-          <a class="user-buttons__email" href=" mailto:mail@htmlacademy.ru"></a>
+        <li class="official-menu__item">
+          <a class="official-menu_title" href="#">
+            Изучите идеи путешественников
+          </a>
         </li>
-        <li class="user-buttons__item">
-          <a class="user-buttons__user-in" href="#">Авторизация</a>
+        <li class="official-menu__item">
+          <a class="official-menu_title" href="companions.html">
+            Находите тех, кто похож на вас
+          </a>
         </li>
-      </ul>
-      <section class="page-header__review">
-        <p class="page-header__review-text content-about">
-          "Лучшее приложение, что я видел в жизни!"
-        </p>
-        <b class="page-header__review-author content-comment"
-          >Мурат Эльтазин главный редактор газеты "гаджетлайф"</b
-        >
-      </section>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Приложение "Погнали?"</h1>
-      <section class="official-menu">
-        <h2 class="visually-hidden">Служебное меню</h2>
-        <ol class="official-menu__list">
-          <li class="official-menu__item">
-            <a class="official-menu_title" href="#">
-              Выберите направление
-            </a>
-          </li>
-          <li class="official-menu__item">
-            <a class="official-menu_title" href="#">
-              Изучите идеи путешественников
-            </a>
-          </li>
-          <li class="official-menu__item">
-            <a class="official-menu_title" href="#">
-              Находите тех, кто похож на вас
-            </a>
-          </li>
-          <li class="official-menu__item">
-            <a class="official-menu_title" href="#">
-              Путешествуйте вместе!
-            </a>
-          </li>
-        </ol>
-      </section>
-      <section class="about">
-        <h2 class="about__title section-title">
+        <li class="official-menu__item">
+          <a class="official-menu_title" href="#">
+            Путешествуйте вместе!
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <div class="substrate substrate--light-blue fixed">
+      <section class="about about--bg-color fixed">
+        <h2 class="about__title section-title section-title--orange">
           О сервисе
         </h2>
-        <p class="about__text content-about">
-          Любое путешествие веселее c попутчиками, которые на одной волне с
+        <p class="about__text content-about content-about--white">
+          Любое путешествие веселее <br>c попутчиками, которые на одной волне с
           тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
           чужих.
         </p>
-        <p class="about_comment content-comment">
+        <p class="about_comment content-comment content-comment--white">
           А если найдете кого-то близкого по духу — скорее зовите в совместный
           трип!
         </p>
       </section>
-      <section class="directions">
-        <h2 class="directions__title section-title">
+    </div>
+
+    <div class="substrate substrate--dark-blue fixed">
+      <section class="directions directions--bg-color fixed">
+        <h2 class="directions__title section-title section-title--orange">
           Направления
         </h2>
         <p class="directions__about content-about">
-          Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах,
+          Мы не продаем туры<br> и ничего не рекламируем. Люди сами пишут о странах,
           куда хотели бы отправиться и чем можно там заняться.
         </p>
         <ul class="directions__list">
           <li class="directions__item directions__item--thailand">
             <a class="directions__item-link" href="#">
-              <img
-                class="directions__country-flag"
-                src="img/thailand_flag.png"
-                width="35"
-                height="24"
-                alt="Флаг Тайланда"
-              />
+              <img class="directions__country-flag" src="img/thailand_flag.png" width="35" height="24"
+                alt="Флаг Тайланда" />
               <div class="directions__item-wraper">
                 <div>
                   <h3 class="directions__country-name">Тайланд</h3>
@@ -110,13 +122,8 @@
           </li>
           <li class="directions__item directions__item--france">
             <a class="directions__item-link" href="#">
-              <img
-                class="directions__country-flag"
-                src="img/france_flag.png"
-                width="35"
-                height="24"
-                alt="Флаг Франции"
-              />
+              <img class="directions__country-flag" src="img/france_flag.png" width="35" height="24"
+                alt="Флаг Франции" />
               <div class="directions__item-wraper">
                 <div>
                   <h3 class="directions__country-name">Франция</h3>
@@ -128,14 +135,8 @@
           </li>
           <li class="directions__item directions__item--czech">
             <a class="directions__item-link" href="#">
-              <img
-                class="directions__country-flag"
-                src="img/czech_flag.png"
-                width="35"
-                height="24"
-                alt="Флаг Чехии"
-              />
-              <div class="directions__item-wraper">
+              <img class="directions__country-flag" src="img/czech_flag.png" width="35" height="24" alt="Флаг Чехии" />
+              <div class="directions__item-wraper directions__item-wraper--half-transparent">
                 <div>
                   <h3 class="directions__country-name">Чехия</h3>
                   <p class="directions__country-slogan">
@@ -149,52 +150,38 @@
         </ul>
         <a href="#" class="directions__button-all index-button">Показать все</a>
       </section>
-      <section class="companions">
-        <h2 class="companions__title section-title">
+    </div>
+
+    <div class="substrate substrate--light-blue fixed">
+      <section class="companions companions--bg-color fixed">
+        <h2 class="companions__title section-title section-title--orange">
           Попутчики
         </h2>
-        <p class="companions__about content-about">
+        <p class="companions__about content-about content-about--white">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
           Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         </p>
-        <p class="companions__comment content-comment">
+        <p class="companions__comment content-comment content-comment--white">
           Теперь можно легко найти единомышленников!
         </p>
         <ul class="companions__list">
-          <li class="companions__item">
+          <li class="companions__item companions__item--firsova">
             <a class="companions__item-link" href="#">
               <span class="companions__level companions__level--99">
                 99 <span class="companions__text-level">level</span>
               </span>
               <ul class="companions__flags-list">
                 <li class="companions__flag-item">
-                  <img
-                    src="img/sri-Lanka_flag.png"
-                    width="35"
-                    height="24"
-                    alt="Флаг Шри-Ланка"
-                  />
+                  <img src="img/sri-Lanka_flag.png" width="35" height="24" alt="Флаг Шри-Ланка" />
                 </li>
                 <li class="companions__flag-item">
-                  <img
-                    src="img/thailand_flag.png"
-                    width="35"
-                    height="24"
-                    alt="Флаг Тайланд"
-                  />
+                  <img src="img/thailand_flag.png" width="35" height="24" alt="Флаг Тайланд" />
                 </li>
                 <li class="companions__flag-item">
-                  <img
-                    src="img/seychelles_flag.png"
-                    width="35"
-                    height="24"
-                    alt="Флаг Сейшеллы"
-                  />
+                  <img src="img/seychelles_flag.png" width="35" height="24" alt="Флаг Сейшеллы" />
                 </li>
               </ul>
-              <h3
-                class="companions__title-fio companions__title-fio--blue block-title"
-              >
+              <h3 class="companions__title-fio companions__title-fio--blue block-title">
                 Таня Фирсова
               </h3>
               <p class="companions__hashtags">
@@ -202,46 +189,28 @@
               </p>
               <ul class="companions__travel-type-list">
                 <li
-                  class="companions__travel-type-item companions__travel-type-item--airplane companions__travel-type-item--active"
-                ></li>
-                <li
-                  class="companions__travel-type-item companions__travel-type-item--bus"
-                ></li>
-                <li
-                  class="companions__travel-type-item companions__travel-type-item--bicycle"
-                ></li>
-                <li
-                  class="companions__travel-type-item companions__travel-type-item--foot"
-                ></li>
+                  class="companions__travel-type-item companions__travel-type-item--airplane companions__travel-type-item--active">
+                </li>
+                <li class="companions__travel-type-item companions__travel-type-item--bus"></li>
+                <li class="companions__travel-type-item companions__travel-type-item--bicycle"></li>
+                <li class="companions__travel-type-item companions__travel-type-item--foot"></li>
               </ul>
             </a>
           </li>
-          <li class="companions__item">
+          <li class="companions__item companions__item--demin">
             <a class="companions__item-link" href="#">
               <span class="companions__level companions__level--80">
                 80 <span class="companions__text-level">level</span>
               </span>
               <ul class="companions__flags-list">
                 <li class="companions__flag-item">
-                  <img
-                    src="img/belgium_flag.png"
-                    width="35"
-                    height="24"
-                    alt="Флаг Бельгии"
-                  />
+                  <img src="img/belgium_flag.png" width="35" height="24" alt="Флаг Бельгии" />
                 </li>
                 <li class="companions__flag-item">
-                  <img
-                    src="img/czech_flag.png"
-                    width="35"
-                    height="24"
-                    alt="Флаг Чехии"
-                  />
+                  <img src="img/czech_flag.png" width="35" height="24" alt="Флаг Чехии" />
                 </li>
               </ul>
-              <h3
-                class="companions__title-fio companions__title-fio--blue block-title"
-              >
+              <h3 class="companions__title-fio companions__title-fio--blue block-title">
                 Петя Демин
               </h3>
               <p class="companions__hashtags">
@@ -249,128 +218,108 @@
               </p>
               <ul class="companions__travel-type-list">
                 <li
-                  class="companions__travel-type-item companions__travel-type-item--airplane companions__travel-type-item--active"
-                ></li>
+                  class="companions__travel-type-item companions__travel-type-item--airplane companions__travel-type-item--active">
+                </li>
                 <li
-                  class="companions__travel-type-item companions__travel-type-item--bus companions__travel-type-item--active"
-                ></li>
+                  class="companions__travel-type-item companions__travel-type-item--bus companions__travel-type-item--active">
+                </li>
+                <li class="companions__travel-type-item companions__travel-type-item--bicycle"></li>
                 <li
-                  class="companions__travel-type-item companions__travel-type-item--bicycle"
-                ></li>
-                <li
-                  class="companions__travel-type-item companions__travel-type-item--foot companions__travel-type-item--active"
-                ></li>
+                  class="companions__travel-type-item companions__travel-type-item--foot companions__travel-type-item--active">
+                </li>
               </ul>
             </a>
           </li>
         </ul>
-        <a href="#" class="companions__button-all index-button"
-          >Показать всех</a
-        >
+        <a href="#" class="companions__button-all index-button">Показать всех</a>
       </section>
-      <section class="profile-add">
-        <h2 class="profile-add__title section-title">Добавьте свой профиль</h2>
+    </div>
+
+    <div class="substrate substrate--dark-blue fixed">
+      <section class="profile-add profile-add--bg-color fixed">
+        <div class="profile-add__head-section">
+          <h2 class="profile-add__title section-title section-title--orange">Добавьте свой профиль</h2>
+          <img class="profile-add__image" src="img/rates@1x.png" width="80" height="80" alt="Фото профиля">
+        </div>
         <ul class="profile-add__list">
-          <li class="profile-add__item">Базовое размещение бесплатно</li>
-          <li class="profile-add__item">Вывод на первые позиции 99 руб./мес</li>
-          <li class="profile-add__item">Кастомный цвет карточки 59 руб./мес</li>
+          <li class="profile-add__item">Базовое размещение <br>бесплатно</li>
+          <li class="profile-add__item">Вывод на первые позиции <br>99 руб./мес</li>
+          <li class="profile-add__item">Кастомный цвет карточки <br>59 руб./мес</li>
         </ul>
-        <a href="#" class="profile-add__link-all">Показать тариф для бизнеса</a>
+        <a href="#" class="profile-add__link-all profile-add__link-all--dark-blue">Показать тариф для бизнеса</a>
       </section>
-      <section class="feedback">
-        <h2 class="feedback__title section-title">Заинтересовались?</h2>
-        <p class="feedback__label content-about">
+    </div>
+
+    <div class="substrate substrate--yellow fixed">
+      <section class="feedback feedback--bg-color fixed">
+        <h2 class="feedback__title section-title section-title--orange">Заинтересовались?</h2>
+        <p class="feedback__label content-about content-about--white">
           Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда
           скорее
           <a class="feedback__auth-link" href="#">авторизуйтесь.</a>
         </p>
-        <form
-          class="feedback__form"
-          action="https://echo.htmlacademy.ru"
-          method="post"
-        >
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
           <label for="tegistration" class="visually-hidden">
             Введите E-mail
           </label>
-          <input
-            class="feedback__input"
-            type="text"
-            placeholder="E-mail"
-            id="registration"
-            name="registration"
-          />
-          <button
-            class="feedback__button-submit"
-            type="submit"
-            aria-label="Отправить"
-          ></button>
+          <input class="feedback__input" type="text" placeholder="E-mail" id="registration" name="registration" />
+          <button class="feedback__button-submit" type="submit" aria-label="Отправить"></button>
         </form>
-        <p class="feedback__comment content-about">
+        <p class="feedback__comment content-about content-about--white">
           Остались вопросы? Мы с радостью на них ответим!
         </p>
         <ul class="feedback__contacts-list">
           <li class="feedback__contacts-item">
-            <a
-              class="feedback__contact feedback__contact--phone"
-              href=" tel:+7800558628"
-              >8 800 55-86-28</a
-            >
+            <a class="feedback__contact feedback__contact--phone" href=" tel:+7800558628">8 800 55-86-28</a>
           </li>
           <li class="feedback__contacts-item">
-            <a
-              class="feedback__contact feedback__contact--email"
-              href=" mailto:mail@htmlacademy.ru"
-              >mail@htmlacademy.ru</a
-            >
+            <a class="feedback__contact feedback__contact--email"
+              href=" mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
       </section>
-      <section class="adress">
-        <h2 class="visually-hidden">Наш адрес</h2>
-        <p class="adress__text">
-          ул. Большая Конюшенная, 19/8
-        </p>
-        <a class="adress__way-button index-button" href="#"
-          >Проложить маршрут</a
-        >
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003192!2d30.320858716217955!3d59.93871916905404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573394746659!5m2!1sru!2sru"
-          width="400"
-          height="300"
-          frameborder="0"
-          style="border:0;"
-          allowfullscreen=""
-        ></iframe>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo logo">
-        <img
-          src="img/logo-mobile-blue@1x.png"
-          width="100"
-          height="19"
-          alt="Погнали?"
-        />
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--facebook"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--vk"></a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--instagram"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="button copyright__link" href="#"
-          ><span class="hidden">HTML Academy</span></a
-        >
-      </div>
-    </footer>
-  </body>
+    </div>
+
+    <section class="adress fixed">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <p class="adress__text adress__text--dark-blue">
+        ул. Большая Конюшенная, 19/8
+      </p>
+      <a class="adress__way-button index-button" href="#">Проложить маршрут</a>
+
+    </section>
+    <section class="map fixed">
+      <img class="map__img" src="img/map.png" alt="Карта с маршрутом" class="adress__map">
+    </section>
+  </main>
+  <footer class="page-footer fixed">
+    <a class="page-footer__logo logo">
+      <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Погнали?" />
+    </a>
+    <div class="page-footer__social page-footer__social--main social fixed">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--facebook">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--vk">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--instagram">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="button copyright__link" href="#"><span class="hidden">HTML Academy</span></a>
+    </div>
+  </footer>
+</body>
+
 </html>
