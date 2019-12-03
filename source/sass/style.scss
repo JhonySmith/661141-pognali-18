@@ -23,6 +23,7 @@ $yellow: #ffd74b;
   line-height: $line-height;
 }
 
+@import "variables.scss";
 @import "fonts.scss";
 @import "normalize.scss";
 @import "common-classes.scss";

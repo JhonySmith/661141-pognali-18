@@ -133,3 +133,21 @@
 .substrate--yellow {
   background-color: $yellow;
 }
+
+@media (min-width: $tablets-width) {
+  .fixed {
+    width: $tablets-width;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .content-about {
+    @include font-param(300, 28px, $BloggerSans, 0, 33px);
+  }
+
+  .content-comment {
+    @include font-param(700, 21px, $BloggerSans, 0, 25px);
+  }
+}

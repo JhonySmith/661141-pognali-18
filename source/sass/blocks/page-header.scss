@@ -65,3 +65,22 @@
 .page-header__review-text--white {
   color: $white;
 }
+
+@media (min-width: $tablets-width) {
+  .page-header__slogan {
+    width: 400px;
+    margin: 70px auto 90px auto;
+
+    @include font-param(700, 60px, $BloggerSans, 0, 70px);
+  }
+
+  .page-header__review-text {
+    width: 260px;
+    margin-left: 30px;
+  }
+
+  .page-header__review-author {
+    width: 245px;
+    margin-left: 30px;
+  }
+}
