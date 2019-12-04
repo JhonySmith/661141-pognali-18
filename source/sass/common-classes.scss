@@ -120,6 +120,8 @@
 
 .substrate {
   padding: 0;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .substrate--light-blue {
@@ -149,5 +151,9 @@
 
   .content-comment {
     @include font-param(700, 21px, $BloggerSans, 0, 25px);
+  }
+
+  .substrate {
+    width: $tablets-width;
   }
 }
