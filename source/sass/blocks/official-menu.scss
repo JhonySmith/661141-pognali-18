@@ -1,5 +1,7 @@
 .official-menu {
+  box-sizing: border-box;
   padding-bottom: 25px;
+
   background: linear-gradient(to bottom, $dark-blue 25%, $dark-blue-lighter 25%);
 }
 
@@ -8,8 +10,9 @@
 }
 
 .official-menu__list {
-  position: relative;
-  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   margin: 0;
   padding-left: 0;
@@ -19,48 +22,47 @@
 }
 
 .official-menu__item {
-  position: absolute;
-
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
+  width: 225px;
+  margin-top: -10px;
   padding-top: 20px;
-  width: 270px;
+  padding-right: 20px;
+  padding-bottom: 34px;
+  padding-left:25px;
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 
   &:nth-child(1) {
+    margin-top: 0;
+
     background-color: $orange;
   }
 
   &:nth-child(2) {
-    top: 80px;
     background-color: $orange-lighter;
   }
 
   &:nth-child(3) {
-    top: 160px;
     background-color: $yellow-darker;
   }
 
   &:nth-child(4) {
-    top: 240px;
+    padding-bottom: 24px;
+
+    border-radius: 10px;
+
     background-color: $yellow;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
   }
 
   &::after {
     content: counter(item);
     counter-increment: item;
 
-    font-weight: 700;
-    font-size: 18px;
-    font-family: $BloggerSans;
-    letter-spacing: 0;
-    line-height: 18px;
-    color: white;
+    @include font-param(700, 18px, $BloggerSans, 0, 18px);
+    color: $white;
   }
 }
 
@@ -68,33 +70,37 @@
   display: block;
   width: 150px;
 
-  font-weight: 700;
-  font-size: 18px;
-  font-family: $BloggerSans;
-  letter-spacing: 0;
-  line-height: 18px;
+  @include font-param(700, 18px, $BloggerSans, 0, 18px);
   color: $dark-blue;
-
   text-decoration: none;
 }
 
 @media (min-width: $tablets-width) {
+  .official-menu {
+    padding: 0 40px 0 40px;
+  }
+
   .official-menu__list {
-    min-height: 281px;
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+
   }
 
   .official-menu__item {
-    box-sizing: border-box;
-    position: static;
-    width: 354px;
     flex-direction: column;
-    height: auto;
-    padding-left: 35px;
+    width: 309px;
+
+    margin: 0;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 22px;
+    padding-left: 35px;
+
     border-radius: 0;
+    padding-right: 0;
+
+    &:nth-child(2n-1) {
+      padding-right: 20px;
+    }
 
     &:nth-child(2n) {
       margin-left: -20px;
@@ -114,20 +120,48 @@
       border-bottom-left-radius: 20px;
     }
 
-      &:nth-child(4) {
+    &:nth-child(4) {
+      padding-bottom: 22px;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
+    }
+
+    &::after {
+      @include font-param(700, 30px, $BloggerSans, 0, 30px);
     }
   }
 
   .official-menu_title {
-    @include font-param(700, 24px, $BloggerSans, 0, 24px);
-    margin-bottom: 10px;
     width: 190px;
+    margin-bottom: 10px;
 
-    &::after {
-      @include font-param(700, 30px, $BloggerSans, 0, 120px);
-    }
+    @include font-param(700, 24px, $BloggerSans, 0, 24px);
   }
 }
 
+@media (min-width: $desktop-width) {
+  .official-menu {
+    padding: 0 60px 0 60px;
+  }
+
+  .official-menu__item {
+    flex-direction: row;
+    width: 250px;
+
+
+    &:nth-child(n) {
+      margin-left: -20px;
+      padding-right: 55px;
+
+      border-radius: 0;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    &:nth-child(4) {
+      border-radius: 20px;
+    }
+  }
+}

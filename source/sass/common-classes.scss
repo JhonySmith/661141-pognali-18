@@ -15,10 +15,7 @@
 
 .fixed {
   width: 320px;
-  padding-left: 25px;
-  padding-right: 25px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .bordered-bottom-section {
@@ -139,10 +136,7 @@
 @media (min-width: $tablets-width) {
   .fixed {
     width: $tablets-width;
-    padding-left: 40px;
-    padding-right: 40px;
     margin: 0 auto;
-    box-sizing: border-box;
   }
 
   .content-about {
@@ -155,5 +149,12 @@
 
   .substrate {
     width: $tablets-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fixed {
+    width: $desktop-width;
+    margin: 0 auto;
   }
 }

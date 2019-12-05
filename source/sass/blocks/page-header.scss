@@ -1,5 +1,8 @@
 .page-header {
+  box-sizing: border-box;
   padding-top: 27px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .page-header--bordered {
@@ -66,7 +69,16 @@
   color: $white;
 }
 
+.page-header__auth {
+  display: none;
+}
+
 @media (min-width: $tablets-width) {
+  .page-header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .page-header__slogan {
     width: 400px;
     margin: 70px auto 90px auto;
@@ -82,5 +94,9 @@
   .page-header__review-author {
     width: 245px;
     margin-left: 30px;
+  }
+
+  .page-header__auth {
+    display: block;
   }
 }

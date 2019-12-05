@@ -53,3 +53,9 @@
   text-transform: uppercase;
   color: $dark-blue;
 }
+
+@media (min-width: $tablets-width) {
+  .user-buttons {
+    display: none;
+  }
+}
