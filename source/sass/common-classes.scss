@@ -139,6 +139,10 @@
     margin: 0 auto;
   }
 
+  .section-title {
+    @include font-param(700, 45px, $BloggerSans, 0, 45px);
+  }
+
   .content-about {
     @include font-param(300, 28px, $BloggerSans, 0, 33px);
   }

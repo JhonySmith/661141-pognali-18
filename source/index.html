@@ -54,7 +54,7 @@
 
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main--flexed">
 
     <h1 class="visually-hidden">Приложение "Погнали?"</h1>
 
@@ -84,205 +84,192 @@
       </ol>
     </section>
 
-    <div class="substrate substrate--light-blue">
-      <section class="about about--bg-color fixed">
-        <h2 class="about__title section-title section-title--orange">
-          О сервисе
-        </h2>
-        <p class="about__text content-about content-about--white">
-          Любое путешествие веселее <br>c попутчиками, которые на одной волне с
-          тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
-          чужих.
-        </p>
-        <p class="about_comment content-comment content-comment--white">
-          А если найдете кого-то близкого по духу — скорее зовите в совместный
-          трип!
-        </p>
-      </section>
-    </div>
+    <section class="about about--bg-color fixed">
+      <h2 class="about__title section-title section-title--orange">
+        О сервисе
+      </h2>
+      <p class="about__text content-about content-about--white">
+        Любое путешествие веселее <br>c попутчиками, которые на одной волне с
+        тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
+        чужих.
+      </p>
+      <p class="about_comment content-comment content-comment--white">
+        А если найдете кого-то близкого по духу — скорее зовите в совместный
+        трип!
+      </p>
+      <a href="#" class="about__button-more index-button">Подробнее</a>
+    </section>
 
-    <div class="substrate substrate--dark-blue">
-      <section class="directions directions--bg-color fixed">
-        <h2 class="directions__title section-title section-title--orange">
-          Направления
-        </h2>
-        <p class="directions__about content-about">
-          Мы не продаем туры<br> и ничего не рекламируем. Люди сами пишут о странах,
-          куда хотели бы отправиться и чем можно там заняться.
-        </p>
-        <ul class="directions__list">
-          <li class="directions__item directions__item--thailand">
-            <a class="directions__item-link" href="#">
-              <img class="directions__country-flag" src="img/thailand_flag.png" width="35" height="24"
-                alt="Флаг Тайланда" />
-              <div class="directions__item-wraper">
-                <div>
-                  <h3 class="directions__country-name">Тайланд</h3>
-                  <p class="directions__country-slogan">Джунгли зовут!</p>
-                </div>
-                <span class="directions__country-popularity">18321</span>
+    <section class="directions directions--bg-color fixed">
+      <h2 class="directions__title section-title section-title--orange">
+        Направления
+      </h2>
+      <p class="directions__about content-about">
+        Мы не продаем туры<br> и ничего не рекламируем. Люди сами пишут о странах,
+        куда хотели бы отправиться и чем можно там заняться.
+      </p>
+      <ul class="directions__list">
+        <li class="directions__item directions__item--thailand countries-flag countries-flag--thailand">
+          <a class="directions__item-link" href="#">
+            <div class="directions__item-wraper">
+              <div class="directions__item-text">
+                <h3 class="directions__country-name">Тайланд</h3>
+                <p class="directions__country-slogan">Джунгли зовут!</p>
               </div>
-            </a>
-          </li>
-          <li class="directions__item directions__item--france">
-            <a class="directions__item-link" href="#">
-              <img class="directions__country-flag" src="img/france_flag.png" width="35" height="24"
-                alt="Флаг Франции" />
-              <div class="directions__item-wraper">
-                <div>
-                  <h3 class="directions__country-name">Франция</h3>
-                  <p class="directions__country-slogan">Трэ бьен, манифик!</p>
-                </div>
-                <span class="directions__country-popularity">12518</span>
+              <span class="directions__country-popularity">18321</span>
+            </div>
+          </a>
+        </li>
+        <li class="directions__item directions__item--france countries-flag countries-flag--france">
+          <a class="directions__item-link" href="#">
+            <div class="directions__item-wraper">
+              <div class="directions__item-text">
+                <h3 class="directions__country-name">Франция</h3>
+                <p class="directions__country-slogan">Трэ бьен, манифик!</p>
               </div>
-            </a>
-          </li>
-          <li class="directions__item directions__item--czech">
-            <a class="directions__item-link" href="#">
-              <img class="directions__country-flag" src="img/czech_flag.png" width="35" height="24" alt="Флаг Чехии" />
-              <div class="directions__item-wraper directions__item-wraper--half-transparent">
-                <div>
-                  <h3 class="directions__country-name">Чехия</h3>
-                  <p class="directions__country-slogan">
-                    Закоулки старой Европы
-                  </p>
-                </div>
-                <span class="directions__country-popularity">5326</span>
+              <span class="directions__country-popularity">12518</span>
+            </div>
+          </a>
+        </li>
+        <li class="directions__item directions__item--czech countries-flag countries-flag--czech">
+          <a class="directions__item-link" href="#">
+            <div class="directions__item-wraper">
+              <div class="directions__item-text">
+                <h3 class="directions__country-name">Чехия</h3>
+                <p class="directions__country-slogan">
+                  Закоулки старой Европы
+                </p>
               </div>
-            </a>
-          </li>
-        </ul>
-        <a href="#" class="directions__button-all index-button">Показать все</a>
-      </section>
+              <span class="directions__country-popularity">5326</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="directions__button-all index-button">Показать все</a>
+    </section>
+
+    <section class="companions companions--bg-color fixed">
+      <h2 class="companions__title section-title section-title--orange">
+        Попутчики
+      </h2>
+      <p class="companions__about content-about content-about--white">
+        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+        Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+      </p>
+      <p class="companions__comment content-comment content-comment--white">
+        Теперь можно легко найти единомышленников!
+      </p>
+      <ul class="companions__list">
+        <li class="companions__item companions__item--firsova">
+          <a class="companions__item-link" href="#">
+            <span class="companions__level companions__level--99">
+              99 <span class="companions__text-level">level</span>
+            </span>
+            <ul class="companions__flags-list">
+              <li class="companions__flag-item">
+                <img src="img/sri-Lanka_flag.png" width="35" height="24" alt="Флаг Шри-Ланка" />
+              </li>
+              <li class="companions__flag-item">
+                <img src="img/thailand_flag.png" width="35" height="24" alt="Флаг Тайланд" />
+              </li>
+              <li class="companions__flag-item">
+                <img src="img/seychelles_flag.png" width="35" height="24" alt="Флаг Сейшеллы" />
+              </li>
+            </ul>
+            <h3 class="companions__title-fio companions__title-fio--blue block-title">
+              Таня Фирсова
+            </h3>
+            <p class="companions__hashtags">
+              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+            </p>
+            <ul class="companions__travel-type-list">
+              <li
+                class="companions__travel-type-item companions__travel-type-item--airplane companions__travel-type-item--active">
+              </li>
+              <li class="companions__travel-type-item companions__travel-type-item--bus"></li>
+              <li class="companions__travel-type-item companions__travel-type-item--bicycle"></li>
+              <li class="companions__travel-type-item companions__travel-type-item--foot"></li>
+            </ul>
+          </a>
+        </li>
+        <li class="companions__item companions__item--demin">
+          <a class="companions__item-link" href="#">
+            <span class="companions__level companions__level--80">
+              80 <span class="companions__text-level">level</span>
+            </span>
+            <ul class="companions__flags-list">
+              <li class="companions__flag-item">
+                <img src="img/belgium_flag.png" width="35" height="24" alt="Флаг Бельгии" />
+              </li>
+              <li class="companions__flag-item">
+                <img src="img/czech_flag.png" width="35" height="24" alt="Флаг Чехии" />
+              </li>
+            </ul>
+            <h3 class="companions__title-fio companions__title-fio--blue block-title">
+              Петя Демин
+            </h3>
+            <p class="companions__hashtags">
+              #бургер #бар #футбол #концерт #крафт
+            </p>
+            <ul class="companions__travel-type-list">
+              <li
+                class="companions__travel-type-item companions__travel-type-item--airplane companions__travel-type-item--active">
+              </li>
+              <li
+                class="companions__travel-type-item companions__travel-type-item--bus companions__travel-type-item--active">
+              </li>
+              <li class="companions__travel-type-item companions__travel-type-item--bicycle"></li>
+              <li
+                class="companions__travel-type-item companions__travel-type-item--foot companions__travel-type-item--active">
+              </li>
+            </ul>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="companions__button-all index-button">Показать всех</a>
+    </section>
+
+    <section class="profile-add profile-add--bg-color fixed">
+      <div class="profile-add__head-section">
+        <h2 class="profile-add__title section-title section-title--orange">Добавьте свой профиль</h2>
+        <img class="profile-add__image" src="img/rates@1x.png" width="80" height="80" alt="Фото профиля">
+      </div>
+      <ul class="profile-add__list">
+        <li class="profile-add__item">Базовое размещение <br>бесплатно</li>
+        <li class="profile-add__item">Вывод на первые позиции <br>99 руб./мес</li>
+        <li class="profile-add__item">Кастомный цвет карточки <br>59 руб./мес</li>
+      </ul>
+      <a href="#" class="profile-add__link-all profile-add__link-all--dark-blue">Показать тариф для бизнеса</a>
+    </section>
     </div>
 
-    <div class="substrate substrate--light-blue">
-      <section class="companions companions--bg-color fixed">
-        <h2 class="companions__title section-title section-title--orange">
-          Попутчики
-        </h2>
-        <p class="companions__about content-about content-about--white">
-          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-        </p>
-        <p class="companions__comment content-comment content-comment--white">
-          Теперь можно легко найти единомышленников!
-        </p>
-        <ul class="companions__list">
-          <li class="companions__item companions__item--firsova">
-            <a class="companions__item-link" href="#">
-              <span class="companions__level companions__level--99">
-                99 <span class="companions__text-level">level</span>
-              </span>
-              <ul class="companions__flags-list">
-                <li class="companions__flag-item">
-                  <img src="img/sri-Lanka_flag.png" width="35" height="24" alt="Флаг Шри-Ланка" />
-                </li>
-                <li class="companions__flag-item">
-                  <img src="img/thailand_flag.png" width="35" height="24" alt="Флаг Тайланд" />
-                </li>
-                <li class="companions__flag-item">
-                  <img src="img/seychelles_flag.png" width="35" height="24" alt="Флаг Сейшеллы" />
-                </li>
-              </ul>
-              <h3 class="companions__title-fio companions__title-fio--blue block-title">
-                Таня Фирсова
-              </h3>
-              <p class="companions__hashtags">
-                #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-              </p>
-              <ul class="companions__travel-type-list">
-                <li
-                  class="companions__travel-type-item companions__travel-type-item--airplane companions__travel-type-item--active">
-                </li>
-                <li class="companions__travel-type-item companions__travel-type-item--bus"></li>
-                <li class="companions__travel-type-item companions__travel-type-item--bicycle"></li>
-                <li class="companions__travel-type-item companions__travel-type-item--foot"></li>
-              </ul>
-            </a>
-          </li>
-          <li class="companions__item companions__item--demin">
-            <a class="companions__item-link" href="#">
-              <span class="companions__level companions__level--80">
-                80 <span class="companions__text-level">level</span>
-              </span>
-              <ul class="companions__flags-list">
-                <li class="companions__flag-item">
-                  <img src="img/belgium_flag.png" width="35" height="24" alt="Флаг Бельгии" />
-                </li>
-                <li class="companions__flag-item">
-                  <img src="img/czech_flag.png" width="35" height="24" alt="Флаг Чехии" />
-                </li>
-              </ul>
-              <h3 class="companions__title-fio companions__title-fio--blue block-title">
-                Петя Демин
-              </h3>
-              <p class="companions__hashtags">
-                #бургер #бар #футбол #концерт #крафт
-              </p>
-              <ul class="companions__travel-type-list">
-                <li
-                  class="companions__travel-type-item companions__travel-type-item--airplane companions__travel-type-item--active">
-                </li>
-                <li
-                  class="companions__travel-type-item companions__travel-type-item--bus companions__travel-type-item--active">
-                </li>
-                <li class="companions__travel-type-item companions__travel-type-item--bicycle"></li>
-                <li
-                  class="companions__travel-type-item companions__travel-type-item--foot companions__travel-type-item--active">
-                </li>
-              </ul>
-            </a>
-          </li>
-        </ul>
-        <a href="#" class="companions__button-all index-button">Показать всех</a>
-      </section>
-    </div>
-
-    <div class="substrate substrate--dark-blue">
-      <section class="profile-add profile-add--bg-color fixed">
-        <div class="profile-add__head-section">
-          <h2 class="profile-add__title section-title section-title--orange">Добавьте свой профиль</h2>
-          <img class="profile-add__image" src="img/rates@1x.png" width="80" height="80" alt="Фото профиля">
-        </div>
-        <ul class="profile-add__list">
-          <li class="profile-add__item">Базовое размещение <br>бесплатно</li>
-          <li class="profile-add__item">Вывод на первые позиции <br>99 руб./мес</li>
-          <li class="profile-add__item">Кастомный цвет карточки <br>59 руб./мес</li>
-        </ul>
-        <a href="#" class="profile-add__link-all profile-add__link-all--dark-blue">Показать тариф для бизнеса</a>
-      </section>
-    </div>
-
-    <div class="substrate substrate--yellow">
-      <section class="feedback feedback--bg-color fixed">
-        <h2 class="feedback__title section-title section-title--orange">Заинтересовались?</h2>
-        <p class="feedback__label content-about content-about--white">
-          Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда
-          скорее
-          <a class="feedback__auth-link" href="#">авторизуйтесь.</a>
-        </p>
-        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="tegistration" class="visually-hidden">
-            Введите E-mail
-          </label>
-          <input class="feedback__input" type="text" placeholder="E-mail" id="registration" name="registration" />
-          <button class="feedback__button-submit" type="submit" aria-label="Отправить"></button>
-        </form>
-        <p class="feedback__comment content-about content-about--white">
-          Остались вопросы? Мы с радостью на них ответим!
-        </p>
-        <ul class="feedback__contacts-list">
-          <li class="feedback__contacts-item">
-            <a class="feedback__contact feedback__contact--phone" href=" tel:+7800558628">8 800 55-86-28</a>
-          </li>
-          <li class="feedback__contacts-item">
-            <a class="feedback__contact feedback__contact--email"
-              href=" mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-      </section>
-    </div>
+    <section class="feedback feedback--bg-color fixed">
+      <h2 class="feedback__title section-title section-title--orange">Заинтересовались?</h2>
+      <p class="feedback__label content-about content-about--white">
+        Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда
+        скорее
+        <a class="feedback__auth-link" href="#">авторизуйтесь.</a>
+      </p>
+      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="tegistration" class="visually-hidden">
+          Введите E-mail
+        </label>
+        <input class="feedback__input" type="text" placeholder="E-mail" id="registration" name="registration" />
+        <button class="feedback__button-submit" type="submit" aria-label="Отправить"></button>
+      </form>
+      <p class="feedback__comment content-about content-about--white">
+        Остались вопросы? Мы с радостью на них ответим!
+      </p>
+      <ul class="feedback__contacts-list">
+        <li class="feedback__contacts-item">
+          <a class="feedback__contact feedback__contact--phone" href=" tel:+7800558628">8 800 55-86-28</a>
+        </li>
+        <li class="feedback__contacts-item">
+          <a class="feedback__contact feedback__contact--email"
+            href=" mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+    </section>
 
     <section class="adress fixed">
       <h2 class="visually-hidden">Наш адрес</h2>

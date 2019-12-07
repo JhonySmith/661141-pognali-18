@@ -1,6 +1,10 @@
 .profile-add {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  z-index: $z-position - 3;
+
+  box-sizing: border-box;
+  margin-top: -30px;
+  padding: 65px 25px 35px 25px;
+
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
