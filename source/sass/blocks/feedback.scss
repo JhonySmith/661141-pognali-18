@@ -21,6 +21,10 @@
   color: #f0cb4b;
 }
 
+.feedback__form {
+  display: flex;
+}
+
 .feedback__input {
   display: flex;
   align-items: center;
@@ -33,19 +37,15 @@
   @include font-param(700, 18px, $BloggerSans, 0, 18px);
 }
 
-.feedback__form {
-  position: relative;
-}
-
 .feedback__button-submit {
-  position: absolute;
-  top: 0;
-  left: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60px;
   height: 64px;
+
+  margin-left: -60px;
+
   background: #f0cb4b;
   border-width: 0;
   border-radius: 10px;
@@ -102,5 +102,41 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
+  }
+}
+
+@media (min-width: $tablets-width) {
+  .feedback {
+    padding: 60px 75px 60px 75px;
+  }
+
+  .feedback__title {
+    text-align: center;
+  }
+
+  .feedback__label {
+    text-align: center;
+  }
+
+  .feedback__contacts-list {
+    padding-left: 0;
+  }
+
+  .feedback__input {
+    box-sizing: border-box;
+    width: 620px;
+    height: 81px;
+
+    border-radius: 20px;
+  }
+
+  .feedback__button-submit {
+    width: 82px;
+    height: 81px;
+    margin-left: -79px;
+
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 }

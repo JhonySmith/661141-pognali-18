@@ -27,6 +27,31 @@
   margin-bottom: 60px;
 }
 
+.companions__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.companions__photo {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.companions__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+
+  border-radius: 10px;
+
+  background-color: $white;
+}
+
 .companions__level {
   position: absolute;
   top: 16px;
@@ -52,11 +77,13 @@
     display: block;
     width: 54px;
     height: 54px;
+
     border-radius: 50%;
     border-top: 3px solid transparent;
     border-left: 3px solid #ff8d30;
     border-right: 3px solid #ff8d30;
     border-bottom: 3px solid #ff8d30;
+
     transform: rotate(-45deg);
   }
 
@@ -64,9 +91,11 @@
     position: absolute;
     z-index: 2;
     content: "";
+
     display: block;
     width: 54px;
     height: 54px;
+
     border-radius: 50%;
     border-top: 3px solid transparent;
     border-left: 3px solid #ff8d30;
@@ -89,25 +118,12 @@
   }
 }
 
-.companions__list {
-  list-style-type: none;
-  padding: 0;
-}
+.companions__text-level {
+  @include font-param(400, 14px, $BloggerSans, 0, 14px);
 
-.companions__item {
-  position: relative;
-  height: 430px;
-  border-radius: 10px;
-}
+  padding-top: 3px;
 
-.companions__item--firsova {
-  background: url("../img/firsova-mobile@1x.jpg") no-repeat center top;
-  background-color: $white;
-}
-
-.companions__item--demin {
-  background: url("../img/demin-mobile@1x.jpg") no-repeat center top;
-  background-color: $white;
+  border-top: 1px solid rgba($color: white, $alpha: 0.3);
 }
 
 .companions__item-link {
@@ -115,7 +131,6 @@
 }
 
 .companions__title-fio {
-  padding-top: 295px;
   text-align: center;
 }
 
@@ -124,27 +139,34 @@
 }
 
 .companions__hashtags {
-  color: black;
   width: 180px;
+
   margin: 0 auto;
-  text-align: center;
+  margin-bottom: 15px;
 
   @include font-param(400, 16px, $BloggerSans, 0, 18px);
+  text-align: center;
+  color: black;
 }
 
 .companions__travel-type-list {
   display: flex;
   justify-content: space-between;
+
   width: 125px;
+
   margin: 0 auto;
   padding: 0;
+
   list-style-type: none;
 }
 
 .companions__travel-type-item {
   &::before {
     content: "";
+
     display: block;
+
     opacity: 0.15;
   }
 }
@@ -153,6 +175,7 @@
   &::before {
     width: 19px;
     height: 21px;
+
     background-image: url("../img/plane.svg");
   }
 }
@@ -161,6 +184,7 @@
   &::before {
     width: 17px;
     height: 21px;
+
     background-image: url("../img/bus.svg");
   }
 }
@@ -169,6 +193,7 @@
   &::before {
     width: 24px;
     height: 21px;
+
     background-image: url("../img/bike.svg");
   }
 }
@@ -177,6 +202,7 @@
   &::before {
     width: 20px;
     height: 21px;
+
     background-image: url("../img/run.svg");
   }
 }
@@ -190,12 +216,44 @@
 .companions__flags-list {
   position: absolute;
   top: 260px;
+
   display: flex;
+
+  padding: 0;
+
   list-style-type: none;
 }
 
-.companions__text-level {
-  @include font-param(400, 14px, $BloggerSans, 0, 14px);
-  border-top: 1px solid rgba($color: white, $alpha: 0.3);
-  padding-top: 3px;
+.companions__button-all {
+  margin-top: 20px;
+}
+
+@media (min-width: $tablets-width) {
+  .companions {
+    padding: 150px 75px 40px 75px;
+  }
+
+  .companions__about {
+    width: 427px;
+  }
+
+  .companions__comment {
+    width: 260px;
+  }
+
+  .companions__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .companions__item {
+    width: 285px;
+
+    border-radius: 20px;
+  }
+
+  .companions__photo {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
 }

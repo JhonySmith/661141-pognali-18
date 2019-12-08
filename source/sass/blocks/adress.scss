@@ -5,13 +5,41 @@
   margin-top: -30px;
   padding: 65px 25px 35px 25px;
 
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
   background-color: $yellow;
 }
 
 .adress__text {
+  display: flex;
+  align-items: center;
+
+  width: 205px;
+
   @include font-param(700, 16px, $BloggerSans, 0, 22px);
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+
+    background-color: $dark-blue;
+    border-radius: 50%;
+    background-image: url("../img/contacts-location.svg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
 }
 
 .adress__text--dark-blue {
   color: $dark-blue;
+}
+
+.adress__way-button {
+  border: 3px solid $dark-blue;
 }
