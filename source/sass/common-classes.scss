@@ -151,8 +151,12 @@
     @include font-param(700, 21px, $BloggerSans, 0, 25px);
   }
 
-  .substrate {
-    width: $tablets-width;
+  .index-button {
+    box-sizing: border-box;
+    width: 620px;
+    height: 80px;
+
+    @include font-param (700, 24px, $BloggerSans, 0, 24px);
   }
 }
 
@@ -160,5 +164,19 @@
   .fixed {
     width: $desktop-width;
     margin: 0 auto;
+  }
+
+  .content-about {
+    @include font-param (300, 28px, $BloggerSans, 0, 33px);
+  }
+
+  .content-comment {
+    @include font-param (700, 21px, $BloggerSans, 0, 25px);
+  }
+
+  .index-button {
+    width: 274px;
+    height: 81px;
+    border-radius: 20px;
   }
 }

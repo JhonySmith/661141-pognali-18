@@ -12,13 +12,15 @@
 }
 
 .adress__text {
-  display: flex;
-  align-items: center;
-
-  width: 205px;
+  width: 145px;
 
   @include font-param(700, 16px, $BloggerSans, 0, 22px);
   text-transform: uppercase;
+}
+
+.adress__text-description {
+  display: flex;
+  align-items: center;
 
   &::before {
     content: "";
@@ -31,7 +33,7 @@
     border-radius: 50%;
     background-image: url("../img/contacts-location.svg");
     background-position: center;
-    background-size: 50%;
+    background-size: 14px;
     background-repeat: no-repeat;
   }
 }
@@ -42,4 +44,28 @@
 
 .adress__way-button {
   border: 3px solid $dark-blue;
+}
+
+@media (min-width: $tablets-width) {
+  .adress {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .adress__text {
+    width: 435px;
+
+    @include font-param (700, 28px, $BloggerSans, 0, 28px)
+  }
+
+  .adress__text-description {
+    &::before {
+      width: 68px;
+      height: 68px;
+      margin-right: 25px;
+
+      background-size: 21px;
+    }
+  }
+
 }

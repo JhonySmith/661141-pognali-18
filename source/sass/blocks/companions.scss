@@ -257,3 +257,27 @@
     border-top-right-radius: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .companions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 750px;
+    padding-left: 130px;
+    padding-right: 60px;
+    padding-bottom: 135px;
+  }
+
+  .companions__list {
+    order: 5;
+  }
+
+  .companions__comment {
+    margin-bottom: 0;
+  }
+
+  .companions__button-all {
+    order: 4;
+  }
+}

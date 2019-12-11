@@ -189,3 +189,44 @@
     border-bottom-right-radius: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .directions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 750px;
+    padding-top: 150px;
+    padding-bottom: 140px;
+  }
+
+  .directions__list {
+    width: 560px;
+    order: 1;
+  }
+
+  .directions__title {
+    order: 2;
+  }
+
+  .directions__about {
+    order: 3;
+  }
+
+  .directions__button-all {
+    order: 4;
+  }
+
+  .directions__country-name {
+    @include font-param(700, 24px, $BloggerSans, 0, 24px);
+  }
+
+  .directions__country-slogan {
+    @include font-param(500, 20px, $BloggerSans, 0, 17px);
+  }
+
+  .directions__country-popularity {
+    @include font-param(500, 20px, $BloggerSans, 0, 30px);
+    margin-top: 20px;
+  }
+}

@@ -140,3 +140,26 @@
     border-bottom-right-radius: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding-left: 130px;
+    padding-right: 135px;
+  }
+
+  .feedback__input {
+    width: 850px;
+    height: 81px;
+  }
+
+  .feedback__button-submit {
+    position: static;
+
+    width: 325px;
+  }
+
+  .feedback__label {
+    width: 608px;
+    margin: 0 auto;
+  }
+}

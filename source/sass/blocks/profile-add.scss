@@ -177,3 +177,14 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .profile-add {
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .profile-add__item {
+    width: 813px;
+  }
+}
