@@ -55,7 +55,7 @@
   .adress__text {
     width: 435px;
 
-    @include font-param (700, 28px, $BloggerSans, 0, 28px)
+    @include font-param (700, 28px, $BloggerSans, 0, 28px);
   }
 
   .adress__text-description {
@@ -67,5 +67,4 @@
       background-size: 21px;
     }
   }
-
 }
