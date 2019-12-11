@@ -4,9 +4,6 @@
   box-sizing: border-box;
   margin-top: -30px;
   padding: 70px 25px 30px 25px;
-
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
 }
 
 .directions--bg-color {
@@ -145,6 +142,7 @@
 
 @media (min-width: $tablets-width) {
   .directions {
+    margin-top: -60px;
     padding-left: 75px;
     padding-right: 75px;
   }

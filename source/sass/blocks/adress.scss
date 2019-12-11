@@ -5,9 +5,6 @@
   margin-top: -30px;
   padding: 65px 25px 35px 25px;
 
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-
   background-color: $yellow;
 }
 
@@ -48,6 +45,7 @@
 
 @media (min-width: $tablets-width) {
   .adress {
+    margin-top: -60px;
     padding-left: 75px;
     padding-right: 75px;
   }

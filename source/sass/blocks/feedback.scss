@@ -4,9 +4,6 @@
   box-sizing: border-box;
   margin-top: -30px;
   padding: 65px 25px 35px 25px;
-
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
 }
 
 .feedback--bg-color {
@@ -107,6 +104,7 @@
 
 @media (min-width: $tablets-width) {
   .feedback {
+    margin-top: -60px;
     padding: 60px 75px 60px 75px;
   }
 
@@ -143,6 +141,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
+    margin-top: -60px;
     padding-left: 130px;
     padding-right: 135px;
   }

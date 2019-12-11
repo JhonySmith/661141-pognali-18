@@ -19,13 +19,13 @@
 }
 
 .bordered-bottom-section {
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .bordered-top-section {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .page-title {
@@ -158,6 +158,16 @@
 
     @include font-param (700, 24px, $BloggerSans, 0, 24px);
   }
+
+  .bordered-bottom-section {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .bordered-top-section {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -178,5 +188,15 @@
     width: 274px;
     height: 81px;
     border-radius: 20px;
+  }
+
+  .bordered-bottom-section {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .bordered-top-section {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
   }
 }

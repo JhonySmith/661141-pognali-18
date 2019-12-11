@@ -4,9 +4,6 @@
   box-sizing: border-box;
   margin-top: -30px;
   padding: 65px 25px 35px 25px;
-
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
 }
 
 .profile-add--bg-color {
@@ -103,6 +100,7 @@
   .profile-add {
     position: relative;
 
+    margin-top: -60px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 60px;
@@ -180,6 +178,7 @@
 
 @media (min-width: $desktop-width) {
   .profile-add {
+    margin-top: -60px;
     padding-right: 130px;
     padding-left: 130px;
   }
