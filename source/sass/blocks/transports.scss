@@ -55,3 +55,39 @@
 .transports__item--white {
   background-color: $white;
 }
+
+@media (min-width: $tablets-width) {
+  .transports__item {
+    width: 43px;
+    height: 43px;
+
+    &::before {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  .transports__item--plane {
+    &::before {
+      background-size: 19px 21px;
+    }
+  }
+
+  .transports__item--bus {
+    &::before {
+      background-size: 17px 21px;
+    }
+  }
+
+  .transports__item--bike {
+    &::before {
+      background-size: 24px 21px;
+    }
+  }
+
+  .transports__item--run {
+    &::before {
+      background-size: 20px 21px;
+    }
+  }
+}

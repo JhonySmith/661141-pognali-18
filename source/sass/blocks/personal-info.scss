@@ -146,3 +146,48 @@
   justify-content: center;
   padding-left: 0;
 }
+
+@media (min-width: $tablets-width) {
+  .personal-info {
+    justify-content: space-between;
+
+    margin-top: -60px;
+    padding-top: 125px;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  .personal-info__level {
+    order: 1;
+  }
+
+  .personal-info__transport {
+    order: 2;
+  }
+
+  .personal-info__photo {
+    order: 3;
+  }
+
+  .personal-info__change-photo-button {
+    order: 4;
+
+    width: 618px;
+    border-radius: 10px;
+  }
+
+  .presonal-info__hashtags {
+    order: 5;
+
+    width: 618px;
+  }
+
+  .personal-info__group-title {
+    top: auto;
+    bottom: -10px;
+
+    background-color: $light-blue;
+
+    @include font-param(500, 20px, $BloggerSans, 0, 18px);
+  }
+}
