@@ -115,22 +115,9 @@
   background-color: $light-blue;
 }
 
-.substrate {
-  padding: 0;
-  width: 320px;
-  margin: 0 auto;
-}
-
-.substrate--light-blue {
-  background-color: $light-blue;
-}
-
-.substrate--dark-blue {
-  background-color: $dark-blue;
-}
-
-.substrate--yellow {
-  background-color: $yellow;
+.page-body--flexed {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablets-width) {

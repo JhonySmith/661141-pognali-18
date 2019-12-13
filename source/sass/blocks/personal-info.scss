@@ -1,3 +1,18 @@
+.personal-info {
+  z-index: $z-position - 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: -30px;
+  padding-bottom: 65px;
+}
+
 .personal-info--bg-color {
   background-color: $light-blue;
 }
@@ -73,7 +88,9 @@
 
 .personal-info__change-photo-button {
   display: block;
+  box-sizing: border-box;
   width: 270px;
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 20px;
@@ -89,6 +106,8 @@
 
 .presonal-info__hashtags {
   position: relative;
+  margin-top: 35px;
+  margin-bottom: 0;
   padding: 25px;
   border: 1px solid #cbced9;
   border-radius: 10px;
@@ -115,6 +134,8 @@
 .personal-info__transport {
   position: relative;
 
+  width: 270px;
+  margin-top: 25px;
   border: 1px solid #cbced9;
   border-radius: 10px;
 }
@@ -124,58 +145,4 @@
   display: flex;
   justify-content: center;
   padding-left: 0;
-}
-
-.personal-info__transports-item {
-  background-color: white;
-  width: 32.25px;
-  height: 32.25px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &::before {
-    content: "";
-    display: block;
-    background-repeat: no-repeat;
-  }
-}
-
-.personal-info__transports-item--airplane {
-  &::before {
-    width: 14px;
-    height: 16px;
-    background-image: url("../img/plane.svg");
-  }
-}
-
-.personal-info__transports-item--bus {
-  &::before {
-    width: 13px;
-    height: 16px;
-    background-image: url("../img/bus.svg");
-  }
-}
-
-.personal-info__transports-item--bicycle {
-  &::before {
-    width: 19px;
-    height: 17px;
-    background-image: url("../img/bike.svg");
-  }
-}
-
-.personal-info__transports-item--foot {
-  &::before {
-    width: 15px;
-    height: 17px;
-    background-image: url("../img/run.svg");
-  }
-}
-
-.personal-info__transports-item--active {
-  &::before {
-    opacity: 0.15;
-  }
 }

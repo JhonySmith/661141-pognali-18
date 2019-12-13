@@ -3,7 +3,6 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: $light-blue;
 
   &::before {
     position: absolute;
@@ -51,4 +50,8 @@
   &::before {
     opacity: 1;
   }
+}
+
+.transports__item--white {
+  background-color: $white;
 }

@@ -1,6 +1,11 @@
 .add-plan {
+  box-sizing: border-box;
+  z-index: $z-position + 1;
+  margin-top: -30px;
   padding-top: 25px;
+  padding-right: 25px;
   padding-bottom: 45px;
+  padding-left: 25px;
 }
 
 .add-plan--bg-color {
