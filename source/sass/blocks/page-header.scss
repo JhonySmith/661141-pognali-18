@@ -1,5 +1,10 @@
 .page-header {
+  box-sizing: border-box;
   padding-top: 27px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  z-index: $z-position;
 }
 
 .page-header--bordered {
@@ -64,4 +69,73 @@
 
 .page-header__review-text--white {
   color: $white;
+}
+
+.page-header__auth {
+  display: none;
+}
+
+@media (min-width: $tablets-width) {
+  .page-header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .page-header__slogan {
+    width: 400px;
+    margin: 70px auto 90px auto;
+
+    @include font-param(700, 60px, $BloggerSans, 0, 70px);
+  }
+
+  .page-header__review-text {
+    width: 260px;
+    margin-left: 30px;
+  }
+
+  .page-header__review-author {
+    width: 245px;
+    margin-left: 30px;
+  }
+
+  .page-header__auth {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 100px;
+  }
+
+  .page-header__text-wraper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 120px;
+  }
+
+  .page-header__review {
+    width: 285px;
+  }
+
+  .page-header__review-text {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .page-header__review-author {
+    margin-left: 0;
+  }
+
+  .page-header__slogan {
+    margin: 0;
+    text-align: left;
+    padding-left: 70px;
+
+    @include font-param (700, 60px, $BloggerSans, 0, 70px);
+  }
 }

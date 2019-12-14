@@ -1,8 +1,12 @@
 .about {
+  z-index: $z-position;
+
+  box-sizing: border-box;
+
   padding-top: 33px;
   padding-bottom: 85px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  padding-left: 50px;
+
   background: url("../img/about-mobile@1x.png") no-repeat -8px bottom;
 }
 
@@ -17,9 +21,42 @@
 
 .about__text {
   width: 220px;
+
   margin-bottom: 25px;
 }
 
-.about_comment {
+.about__comment {
   width: 220px;
+}
+
+.about__button-more {
+  display: none;
+}
+
+@media (min-width: $tablets-width) {
+  .about {
+    padding-left: 70px;
+  }
+
+  .about__text {
+    width: 300px;
+  }
+
+  .about__comment {
+    width: 260px;
+  }
+
+  .about__button-more {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__text {
+    width: 620px;
+  }
+
+  .about__comment {
+    width: 413px;
+  }
 }

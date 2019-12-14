@@ -1,27 +1,6 @@
 .map {
-  padding: 0;
   position: relative;
+  z-index: $z-position - 6;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 320px;
-    height: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-color: $yellow;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 4px;
-    width: 320px;
-    height: 30px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    background-color: white;
-  }
+  margin-top: -20px;
 }

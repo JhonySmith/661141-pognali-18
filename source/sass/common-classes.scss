@@ -15,20 +15,17 @@
 
 .fixed {
   width: 320px;
-  padding-left: 25px;
-  padding-right: 25px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .bordered-bottom-section {
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .bordered-top-section {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .page-title {
@@ -118,18 +115,75 @@
   background-color: $light-blue;
 }
 
-.substrate {
-  padding: 0;
+.page-body--flexed {
+  display: flex;
+  flex-direction: column;
 }
 
-.substrate--light-blue {
-  background-color: $light-blue;
+@media (min-width: $tablets-width) {
+  .fixed {
+    width: $tablets-width;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    @include font-param(700, 45px, $BloggerSans, 0, 45px);
+  }
+
+  .content-about {
+    @include font-param(300, 28px, $BloggerSans, 0, 33px);
+  }
+
+  .content-comment {
+    @include font-param(700, 21px, $BloggerSans, 0, 25px);
+  }
+
+  .index-button {
+    box-sizing: border-box;
+    width: 620px;
+    height: 80px;
+
+    @include font-param (700, 24px, $BloggerSans, 0, 24px);
+  }
+
+  .bordered-bottom-section {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .bordered-top-section {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
 }
 
-.substrate--dark-blue {
-  background-color: $dark-blue;
-}
+@media (min-width: $desktop-width) {
+  .fixed {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
 
-.substrate--yellow {
-  background-color: $yellow;
+  .content-about {
+    @include font-param (300, 28px, $BloggerSans, 0, 33px);
+  }
+
+  .content-comment {
+    @include font-param (700, 21px, $BloggerSans, 0, 25px);
+  }
+
+  .index-button {
+    width: 274px;
+    height: 81px;
+    border-radius: 20px;
+  }
+
+  .bordered-bottom-section {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .bordered-top-section {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
 }

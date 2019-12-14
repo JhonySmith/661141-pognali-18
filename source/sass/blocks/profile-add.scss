@@ -1,8 +1,9 @@
 .profile-add {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  z-index: $z-position - 3;
+
+  box-sizing: border-box;
+  margin-top: -30px;
+  padding: 65px 25px 35px 25px;
 }
 
 .profile-add--bg-color {
@@ -34,7 +35,6 @@
   display: flex;
   justify-content: space-between;
 
-  margin-left: 25px;
   padding-top: 20px;
   width: 245px;
 
@@ -78,6 +78,11 @@
   }
 }
 
+.profile-add__info {
+  display: flex;
+  flex-direction: column;
+}
+
 .profile-add__link-all {
   display: block;
   margin-left: 25px;
@@ -89,4 +94,96 @@
 
 .profile-add__link-all--dark-blue {
   color: $dark-blue;
+}
+
+@media (min-width: $tablets-width) {
+  .profile-add {
+    position: relative;
+
+    margin-top: -60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+  }
+
+  .profile-add__title {
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 75px;
+  }
+
+  .profile-add__image {
+    position: absolute;
+  }
+
+  .profile-add__item {
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 688px;
+
+    padding-top: 0;
+
+    @include font-param(300, 28px, $BloggerSans, 0, 33px);
+
+    &::after {
+      width: 67px;
+      height: 67px;
+      margin-right: 25px;
+
+      @include font-param(700, 28px, $BloggerSans, 0, 28px);
+    }
+
+    &:nth-child(3) .profile-add__info {
+      border-bottom: 1px solid $light-gray;
+    }
+  }
+
+  .profile-add__info {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    border-top: 1px solid $light-gray;
+  }
+
+  .profile-add__link-all {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+
+    @include font-param(700, 20px, $BloggerSans, 0, 20px);
+
+    &::before {
+      content: "";
+      display: block;
+      width: 67px;
+      height: 67px;
+
+      margin-right: 20px;
+
+      border-radius: 50%;
+      background-color: $blue;
+      background-image: url("../img/business.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile-add {
+    margin-top: -60px;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .profile-add__item {
+    width: 813px;
+  }
 }

@@ -1,6 +1,11 @@
 .add-plan {
+  box-sizing: border-box;
+  z-index: $z-position + 1;
+  margin-top: -30px;
   padding-top: 25px;
+  padding-right: 25px;
   padding-bottom: 45px;
+  padding-left: 25px;
 }
 
 .add-plan--bg-color {
@@ -207,4 +212,60 @@
 .add-plan__area-label {
   @include font-param(500, 18px, $BloggerSans, 0, 18px);
   color: $dark-blue;
+}
+
+@media (min-width: $tablets-width) {
+  .add-plan {
+    margin-top: -30px;
+    padding-right: 75px;
+    padding-left: 75px;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .add-plan__form {
+    padding-top: 45px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .add-plan__form-title {
+    @include font-param(700, 36px, $BloggerSans, 0, 36px);
+    margin: 0;
+  }
+
+  .add-plan__form-info {
+    width: 500px;
+
+    @include font-param(400, 20px, $BloggerSans, 0, 24px);
+  }
+
+  .add-plan__number-input-text {
+    width: 530px;
+  }
+
+  .add-plan__next-button {
+    width: 285px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    border-radius: 20px;
+    text-transform: none;
+
+    @include font-param(700, 24px, $BloggerSans, 0, 24px);
+  }
+
+  .add-plan__form select {
+    width: 369px;
+    height: 70px;
+    padding-left: 25px;
+
+    @include font-param(500, 20px, $BloggerSans, 0.1pt, 18px);
+  }
+
+  .add-plan__navigate-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
 }

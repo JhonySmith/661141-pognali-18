@@ -1,14 +1,3 @@
-$BloggerSans: "BloggerSans", "Arial", "Helvetica", sans-serif;
-$dark-blue: #161c36;
-$dark-blue-lighter: #192144;
-$light-blue: #edeff6;
-$white: #ffffff;
-$orange: #ff8d30;
-$orange-lighter: #ffa530;
-$yellow-darker: #ffbd30;
-$yellow: #ffd74b;
-
-
 @mixin font-param(
   $font-weight: 400,
   $font-size: 16px,
@@ -23,9 +12,11 @@ $yellow: #ffd74b;
   line-height: $line-height;
 }
 
+@import "variables.scss";
 @import "fonts.scss";
 @import "normalize.scss";
 @import "common-classes.scss";
+@import "blocks/page-main.scss";
 @import "blocks/countries.scss";
 @import "blocks/transports.scss";
 @import "blocks/user-lvl.scss";
