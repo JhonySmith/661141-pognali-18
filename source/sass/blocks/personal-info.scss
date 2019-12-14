@@ -154,6 +154,7 @@
     margin-top: -60px;
     padding-top: 125px;
     padding-right: 75px;
+    padding-bottom: 120px;
     padding-left: 75px;
   }
 
@@ -167,6 +168,8 @@
 
   .personal-info__photo {
     order: 3;
+
+    border-radius: 10px;
   }
 
   .personal-info__change-photo-button {
