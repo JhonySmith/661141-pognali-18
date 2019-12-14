@@ -32,7 +32,8 @@
   color: $dark-blue;
 }
 
-.my-plans__companions, .my-plans__date {
+.my-plans__companions,
+.my-plans__date {
   @include font-param(500, 14px, $BloggerSans, 1px, 20px);
   color: $dark-blue;
   text-transform: uppercase;
