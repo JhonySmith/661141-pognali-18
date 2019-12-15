@@ -8,190 +8,199 @@
 </head>
 
 <body class="page-body--flexed">
-  <header class="page-header page-header--bg-color bordered-bottom-section fixed">
+  <div class="backgrounds backgrounds--dark-blue backgrounds--header bordered-bottom-section">
+    <header class="page-header fixed">
 
-    <div class="page-header__menu-and-logo-wraper">
-      <a href="index.html" class="page-header__logo logo">
-        <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?" />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle button-toggle" aria-label="Меню"></button>
-      </nav>
-    </div>
-    <h1 class="page-header__title page-title page-title--white">Направления</h1>
-  </header>
+      <div class="page-header__menu-and-logo-wraper">
+        <a href="index.html" class="page-header__logo logo">
+          <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Погнали?" />
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle button-toggle" aria-label="Меню"></button>
+        </nav>
+      </div>
+      <h1 class="page-header__title page-title page-title--white">Направления</h1>
+    </header>
+  </div>
 
   <main class="page-main page-main--flexed">
-    <section class="personal-info personal-info--bg-color fixed">
-      <h2 class="visually-hidden">Личная информация</h2>
-      <span class="personal-info__level personal-info__level--80">
-        80 <span class="personal-info__text-level">level</span>
-      </span>
-      <img src="img/photo-account-mobile@1x.jpg" class="personal-info__photo" width="100" height="100"
-        alt="Фото аккаунта" />
-      <a href="#" class="personal-info__change-photo-button">Сменить фото</a>
-      <p class="presonal-info__hashtags">
-        <b class="personal-info__group-title">Тэги</b>
-        #бургер #бар #футбол #концерт #крафт
-      </p>
-      <div class="personal-info__transport">
-        <b class="personal-info__group-title">Транспорт</b>
-        <ul class="personal-info__transports-list transports">
-          <li class="transports__item transports__item--white transports__item--plane"><span
-              class="visually-hidden">Самолет</span></li>
-          <li class="transports__item transports__item--white transports__item--bus"><span
-              class="visually-hidden">Автобус</span></li>
-          <li class="transports__item transports__item--white transports__item--bike transports__item--active">
-            <span class="visually-hidden">Велосипед</span></li>
-          <li class="transports__item transports__item--white transports__item--run"><span
-              class="visually-hidden">Пешком</span></li>
+
+    <div class="backgrounds backgrounds--light-blue backgrounds--personal-info">
+      <section class="personal-info fixed">
+        <h2 class="visually-hidden">Личная информация</h2>
+        <span class="personal-info__level personal-info__level--80">
+          80 <span class="personal-info__text-level">level</span>
+        </span>
+        <img src="img/photo-account-mobile@1x.jpg" class="personal-info__photo" width="100" height="100"
+          alt="Фото аккаунта" />
+        <a href="#" class="personal-info__change-photo-button">Сменить фото</a>
+        <p class="presonal-info__hashtags">
+          <b class="personal-info__group-title">Тэги</b>
+          #бургер #бар #футбол #концерт #крафт
+        </p>
+        <div class="personal-info__transport">
+          <b class="personal-info__group-title">Транспорт</b>
+          <ul class="personal-info__transports-list transports">
+            <li class="transports__item transports__item--white transports__item--plane"><span
+                class="visually-hidden">Самолет</span></li>
+            <li class="transports__item transports__item--white transports__item--bus"><span
+                class="visually-hidden">Автобус</span></li>
+            <li class="transports__item transports__item--white transports__item--bike transports__item--active">
+              <span class="visually-hidden">Велосипед</span></li>
+            <li class="transports__item transports__item--white transports__item--run"><span
+                class="visually-hidden">Пешком</span></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <div class="backgrounds backgrounds--mid-blue backgrounds--my-plans bordered-top-section">
+      <section class="my-plans fixed">
+        <h2 class="my-plans__title section-title section-title--dark-blue">Мои планы:</h2>
+        <ul class="my-plans__list">
+          <li class="my-plans__item">
+            <b class="my-plans__country"><span>1.</span>Франция, Италия</b>
+            <p class="my-plans__companions">
+              3 Попутчика
+            </p>
+            <p class="my-plans__date">
+              26 мар - 29 мар
+            </p>
+            <a href="#" class="my-plans__change-button">Изменить</a>
+          </li>
+          <li class="my-plans__item">
+            <b class="my-plans__country"><span>2.</span>Тайланд, Индонезия</b>
+            <p class="my-plans__companions">
+              1 Попутчик
+            </p>
+            <p class="my-plans__date">
+              1 июл - 15 июл
+            </p>
+            <a href="#" class="my-plans__change-button">Изменить</a>
+          </li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="my-plans my-plans--bg-color bordered-top-section fixed">
-      <h2 class="my-plans__title section-title section-title--dark-blue">Мои планы:</h2>
-      <ul class="my-plans__list">
-        <li class="my-plans__item">
-          <b class="my-plans__country"><span>1.</span>Франция, Италия</b>
-          <p class="my-plans__companions">
-            3 Попутчика
-          </p>
-          <p class="my-plans__date">
-            26 мар - 29 мар
-          </p>
-          <a href="#" class="my-plans__change-button">Изменить</a>
-        </li>
-        <li class="my-plans__item">
-          <b class="my-plans__country">2. Тайланд, Индонезия</b>
-          <p class="my-plans__companions">
-            1 Попутчик
-          </p>
-          <p class="my-plans__date">
-            1 июл - 15 июл
-          </p>
-          <a href="#" class="my-plans__change-button">Изменить</a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="add-plan add-plan--bg-color fixed bordered-top-section">
-      <h2 class="add-plan__title section-title section-title--dark-blue">Добавить план</h2>
-      <ul class="add-plan__list">
-        <li class="add-plan__item">
-          <form class="add-plan__form" action="">
-            <h3 class="add-plan__form-title">
-              Шаг 1.<br>
-              Даты прибывания
-            </h3>
-            <p class="add-plan__form-info">
-              Укажите предпочтительное количество попутчиков, которых вы
-              хотели бы позвать в поездку и ее предполагаемую длительность.
-            </p>
-            <p class="add-plan__counter">
-              <label class="add-plan__counter-label" for="numbers-companions">
-                Ищу попутчиков:<span class="add-plan__counter-label--opacity">Чел.</span>
-              </label>
-              <div class="add-plan__number-input">
-                <button class="add-plan__less-button" type="button">
-                  <span class="visually-hidden">Меньше</span>
-                </button>
-                <input type="text" class="add-plan__number-input-text" id="numbers-companions" name="numbers-companions"
-                  value="2" />
-                <button class="add-plan__more-button" type="button">
-                  <span class="visually-hidden">Больше</span>
-                </button>
+    <div class="backgrounds backgrounds--dark-mid-blue backgrounds--add-plan bordered-top-section">
+      <section class="add-plan fixed">
+        <h2 class="add-plan__title section-title section-title--dark-blue">Добавить план</h2>
+        <ul class="add-plan__list">
+          <li class="add-plan__item">
+            <form class="add-plan__form" action="">
+              <h3 class="add-plan__form-title">
+                Шаг 1.<br>
+                Даты прибывания
+              </h3>
+              <p class="add-plan__form-info">
+                Укажите предпочтительное количество попутчиков, которых вы
+                хотели бы позвать в поездку и ее предполагаемую длительность.
+              </p>
+              <p class="add-plan__counter">
+                <label class="add-plan__counter-label" for="numbers-companions">
+                  Ищу попутчиков:<span class="add-plan__counter-label--opacity">Чел.</span>
+                </label>
+                <div class="add-plan__number-input">
+                  <button class="add-plan__less-button" type="button">
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <input type="text" class="add-plan__number-input-text" id="numbers-companions"
+                    name="numbers-companions" value="2" />
+                  <button class="add-plan__more-button" type="button">
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+              </p>
+              <p class="add-plan__duration">
+                <label class="add-plan__counter-label" for="duration">
+                  Длительность:<span class="add-plan__counter-label--opacity">Дн.</span>
+                </label>
+                <div class="add-plan__number-input">
+                  <button class="add-plan__less-button" type="button">
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <input type="text" class="add-plan__number-input-text" id="duration" name="duration" value="2" />
+                  <button class="add-plan__more-button" type="button">
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+              </p>
+              <p class="add-plan__with-children">
+                <input class="visually-hidden" type="checkbox" id="with-childrens" name="with-childrens" />
+                <label for="with-childrens">Можно с детьми</label>
+              </p>
+              <input type="date" />
+              <div class="add-plan__navigate-buttons">
+                <a href="#" class="add-plan__next-button">Следующий шаг</a>
               </div>
-            </p>
-            <p class="add-plan__duration">
-              <label class="add-plan__counter-label" for="duration">
-                Длительность:<span class="add-plan__counter-label--opacity">Дн.</span>
-              </label>
-              <div class="add-plan__number-input">
-                <button class="add-plan__less-button" type="button">
-                  <span class="visually-hidden">Меньше</span>
-                </button>
-                <input type="text" class="add-plan__number-input-text" id="duration" name="duration" value="2" />
-                <button class="add-plan__more-button" type="button">
-                  <span class="visually-hidden">Больше</span>
-                </button>
+            </form>
+          </li>
+          <li class="add-plan__item">
+            <form class="add-plan__form" action="">
+              <h3 class="add-plan__form-title">
+                Шаг 2. Маршрут
+              </h3>
+              <p class="add-plan__form-info">
+                Укажите страны, которые вы хотели по посетить. Это может быть
+                одна или сразу несколько.
+              </p>
+              <div class="add-plan__country">
+
+                <select name="" id="">
+                  <option>Выберите страну</option>
+                  <option selected>Босния и Герцеговина
+                  </option>
+                  <option>Чехословакия</option>
+                </select>
+                <div class="add-plan__country-flag"></div>
               </div>
-            </p>
-            <p class="add-plan__with-children">
-              <input class="visually-hidden" type="checkbox" id="with-childrens" name="with-childrens" />
-              <label for="with-childrens">Можно с детьми</label>
-            </p>
-            <input type="date" />
-            <div class="add-plan__navigate-buttons">
-              <a href="#" class="add-plan__next-button">Следующий шаг</a>
-            </div>
-          </form>
-        </li>
-        <li class="add-plan__item">
-          <form class="add-plan__form" action="">
-            <h3 class="add-plan__form-title">
-              Шаг 2. Маршрут
-            </h3>
-            <p class="add-plan__form-info">
-              Укажите страны, которые вы хотели по посетить. Это может быть
-              одна или сразу несколько.
-            </p>
-            <div class="add-plan__country">
 
-              <select name="" id="">
-                <option>Выберите страну</option>
-                <option selected>Босния и Герцеговина
-                </option>
-                <option>Чехословакия</option>
-              </select>
-              <div class="add-plan__country-flag"></div>
-            </div>
-
-            <div class="add-plan__country">
-              <select name="" id="">
-                <option>Выберите страну</option>
-                <option>Босния и Герцеговина</option>
-                <option selected>Чехословакия</option>
-              </select>
-              <div class="add-plan__country-flag"></div>
-            </div>
-            <div class="add-plan__country">
-              <select name="" id="">
-                <option selected>Выберите страну</option>
-                <option>Босния и Герцеговина</option>
-                <option>Чехословакия</option>
-              </select>
-              <div class="add-plan__country-flag"></div>
-            </div>
-            <div class="add-plan__navigate-buttons">
-              <a href="#" class="add-plan__next-button">Следующий шаг</a>
-              <a href="#" class="add-plan__back-button">На шаг назад</a>
-            </div>
-          </form>
-        </li>
-        <li class="add-plan__item">
-          <form class="add-plan__form" action="">
-            <h3 class="add-plan__form-title">
-              Шаг 3. Развлечения
-            </h3>
-            <p class="add-plan__form-info">
-              Наконец, расскажите о своих планах времяпровождения. Можно
-              писать в свободной форме и ставить тэги.
-            </p>
-            <label class="add-plan__area-label" for="country-plans-bosnia">Босния и герцеговина</label>
-            <textarea name="country-plans-bosnia" id="country-plans-bosnia" cols="25" rows="10"
-              placeholder="План действий"></textarea>
-            <label class="add-plan__area-label" for="country-plans-chehoslovakia">Чехословакия</label>
-            <textarea name="country-plans-chehoslovakia" id="country-plans-chehoslovakia" cols="25" rows="10"
-              value="">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-            <div class="add-plan__navigate-buttons">
-              <a href="#" class="add-plan__next-button">Следующий шаг</a>
-              <a href="#" class="add-plan__back-button">На шаг назад</a>
-            </div>
-          </form>
-        </li>
-      </ul>
-    </section>
+              <div class="add-plan__country">
+                <select name="" id="">
+                  <option>Выберите страну</option>
+                  <option>Босния и Герцеговина</option>
+                  <option selected>Чехословакия</option>
+                </select>
+                <div class="add-plan__country-flag"></div>
+              </div>
+              <div class="add-plan__country">
+                <select name="" id="">
+                  <option selected>Выберите страну</option>
+                  <option>Босния и Герцеговина</option>
+                  <option>Чехословакия</option>
+                </select>
+                <div class="add-plan__country-flag"></div>
+              </div>
+              <div class="add-plan__navigate-buttons">
+                <a href="#" class="add-plan__next-button">Следующий шаг</a>
+                <a href="#" class="add-plan__back-button">На шаг назад</a>
+              </div>
+            </form>
+          </li>
+          <li class="add-plan__item">
+            <form class="add-plan__form add-plan__form--entertainment" action="">
+              <h3 class="add-plan__form-title">
+                Шаг 3. Развлечения
+              </h3>
+              <p class="add-plan__form-info">
+                Наконец, расскажите о своих планах времяпровождения. Можно
+                писать в свободной форме и ставить тэги.
+              </p>
+              <label class="add-plan__area-label" for="country-plans-bosnia">Босния и герцеговина</label>
+              <textarea name="country-plans-bosnia" id="country-plans-bosnia" cols="25" rows="10"
+                placeholder="План действий"></textarea>
+              <label class="add-plan__area-label" for="country-plans-chehoslovakia">Чехословакия</label>
+              <textarea name="country-plans-chehoslovakia" id="country-plans-chehoslovakia" cols="25" rows="10"
+                value="">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              <div class="add-plan__navigate-buttons">
+                <a href="#" class="add-plan__next-button">Следующий шаг</a>
+                <a href="#" class="add-plan__back-button">На шаг назад</a>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo logo">

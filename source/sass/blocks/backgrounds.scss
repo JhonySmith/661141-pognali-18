@@ -18,6 +18,14 @@
   background-color: $white;
 }
 
+.backgrounds--mid-blue {
+  background-color: $mid-blue;
+}
+
+.backgrounds--dark-mid-blue {
+  background-color: $dark-mid-blue;
+}
+
 .backgrounds--header {
   z-index: $z-position;
 }
@@ -62,6 +70,24 @@
   margin-top: -30px;
 }
 
+.backgrounds--personal-info {
+  z-index: $z-position - 1;
+
+  margin-top: -30px;
+}
+
+.backgrounds--my-plans {
+  z-index: $z-position;
+
+  margin-top: -30px;
+}
+
+.backgrounds--add-plan {
+  z-index: $z-position + 1;
+
+  margin-top: -30px;
+}
+
 @media (min-width: $tablets-width) {
   .backgrounds--directions {
     margin-top: -60px;
@@ -86,4 +112,18 @@
   .backgrounds--page-footer {
     margin-top: -60px;
   }
+
+  .backgrounds--personal-info {
+    margin-top: -60px;
+  }
+
+  .backgrounds--my-plans {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .backgrounds--add-plan {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
 }
