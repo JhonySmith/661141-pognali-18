@@ -1,0 +1,89 @@
+.backgrounds {
+  min-width: 320px;
+}
+
+.backgrounds--dark-blue {
+  background-color: $dark-blue;
+}
+
+.backgrounds--light-blue {
+  background-color: $light-blue;
+}
+
+.backgrounds--yellow {
+  background-color: $yellow;
+}
+
+.backgrounds--white {
+  background-color: $white;
+}
+
+.backgrounds--header {
+  z-index: $z-position;
+}
+
+.backgrounds--about {
+  z-index: $z-position;
+}
+
+.backgrounds--directions {
+  z-index: $z-position - 1;
+
+  margin-top: -30px;
+}
+
+.backgrounds--companions {
+  z-index: $z-position - 2;
+
+  margin-top: -30px;
+}
+
+.backgrounds--profile-add {
+  z-index: $z-position - 3;
+
+  margin-top: -30px;
+}
+
+.backgrounds--feedback {
+  z-index: $z-position - 4;
+
+  margin-top: -30px;
+}
+
+.backgrounds--adress {
+  z-index: $z-position - 5;
+
+  margin-top: -30px;
+}
+
+.backgrounds--page-footer {
+  z-index: $z-position - 5;
+
+  margin-top: -30px;
+}
+
+@media (min-width: $tablets-width) {
+  .backgrounds--directions {
+    margin-top: -60px;
+  }
+
+  .backgrounds--companions {
+    margin-top: -60px;
+  }
+
+  .backgrounds--profile-add {
+    margin-top: -60px;
+  }
+
+  .backgrounds--feedback {
+    margin-top: -60px;
+  }
+
+  .backgrounds--adress {
+    margin-top: -60px;
+  }
+
+  .backgrounds--page-footer {
+    margin-top: -60px;
+  }
+}
