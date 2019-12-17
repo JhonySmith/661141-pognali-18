@@ -167,10 +167,6 @@
     order: 2;
   }
 
-  .tablets-hidden {
-    display: none;
-  }
-
   .companions-cards__tranports-list {
     flex-direction: column;
   }
@@ -188,6 +184,55 @@
   .companions-cards__visit-list {
     display: flex;
     flex-direction: row;
+  }
+
+  .companions-cards__button-call {
+    box-sizing: border-box;
+    width: 148px;
+
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 25px;
+
+    @include font-param(700, 20px, $BloggerSans, 0, 30px);
+  }
+
+  .companions-cards__likes {
+    display: flex;
+    align-items: center;
+
+    @include font-param(700, 20px, $BloggerSans, 0, 30px);
+  }
+
+  .companions-cards__photo {
+    border-radius: 0;
+    border-radius: 20px;
+  }
+
+  .companions-cards__fio {
+    width: 220px;
+
+    @include font-param(700, 30px, $BloggerSans, 0, 30px);
+  }
+
+  .companions-cards__hashtags {
+    width: 230px;
+
+    @include font-param(400, 20px, $BloggerSans, 0 ,24px);
+  }
+
+  .companions-cards__tranports-list {
+    border: none;
+  }
+
+  .companions-cards__lvl-wraper {
+    border: none;
+  }
+
+  .tablets-hidden {
+    display: none;
   }
 }
 
