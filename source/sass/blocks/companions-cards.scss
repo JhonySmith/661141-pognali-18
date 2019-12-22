@@ -136,8 +136,8 @@
 }
 
 .companions-cards__block--mobile-hidden {
-    display: none;
-  }
+  display: none;
+}
 
 @media (min-width: $tablets-width) {
   .companions-cards__item {
@@ -161,24 +161,20 @@
 
   .companions-cards__flex-container {
     order: 1;
-  }
 
-  .companions-cards__visit-list-wraper {
-    order: 2;
-  }
-
-  .companions-cards__tranports-list {
-    flex-direction: column;
-  }
-
-  .companions-cards__flex-container {
     flex-direction: column;
 
     width: 70px;
   }
 
   .companions-cards__visit-list-wraper {
+    order: 2;
     width: 100%;
+  }
+
+  .companions-cards__tranports-list {
+    flex-direction: column;
+    border: none;
   }
 
   .companions-cards__visit-list {
@@ -207,7 +203,6 @@
   }
 
   .companions-cards__photo {
-    border-radius: 0;
     border-radius: 20px;
   }
 
@@ -221,10 +216,6 @@
     width: 230px;
 
     @include font-param(400, 20px, $BloggerSans, 0 ,24px);
-  }
-
-  .companions-cards__tranports-list {
-    border: none;
   }
 
   .companions-cards__lvl-wraper {
@@ -261,9 +252,14 @@
 
   .companions-cards__flex-container {
     order: 2;
+
+    flex-direction: row;
+
+    width: 235px;
   }
 
   .companions-cards__visit-list-wraper {
+    width: 165px;
     padding-top: 50px;
     order: 1;
   }
@@ -273,22 +269,11 @@
     flex-direction: column;
   }
 
-  .companions-cards__visit-list-wraper {
-    width: 165px;
-  }
-
   .companions-cards__tranports-list {
     flex-direction: row;
   }
 
-  .companions-cards__flex-container {
-    flex-direction: row;
-
-    width: 235px;
-  }
-
-  .compnions-cards--desktop-hidden
-  {
+  .compnions-cards--desktop-hidden {
     display: none;
   }
 }
