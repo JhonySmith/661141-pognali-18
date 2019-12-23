@@ -1,6 +1,4 @@
 .about {
-  z-index: $z-position;
-
   box-sizing: border-box;
 
   padding-top: 33px;
@@ -8,10 +6,6 @@
   padding-left: 50px;
 
   background: url("../img/about-mobile@1x.png") no-repeat -8px bottom;
-}
-
-.about--bg-color {
-  background-color: $dark-blue-lighter;
 }
 
 .about__title {

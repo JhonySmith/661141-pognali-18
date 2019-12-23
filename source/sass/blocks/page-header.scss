@@ -3,23 +3,12 @@
   padding-top: 27px;
   padding-left: 25px;
   padding-right: 25px;
-
-  z-index: $z-position;
-}
-
-.page-header--bordered {
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
 }
 
 .page-header--bg-picture {
   background:
     url("../img/traveller-illustration-mobile@1x.png") no-repeat center,
     url("../img/globe-back-mobile@1x.jpg") no-repeat center top;
-}
-
-.page-header--bg-color {
-  background-color: $dark-blue;
 }
 
 .page-header__title {

@@ -1,15 +1,12 @@
 .personal-info {
-  z-index: $z-position - 1;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 
   box-sizing: border-box;
   padding-top: 50px;
-  padding-left: 25px;
   padding-right: 25px;
-  margin-top: -30px;
+  padding-left: 25px;
   padding-bottom: 65px;
 }
 
@@ -38,26 +35,32 @@
     display: block;
     width: 94px;
     height: 94px;
+
     border-radius: 50%;
     border-top: 3px solid transparent;
-    border-left: 3px solid #ff8d30;
     border-right: 3px solid #ff8d30;
     border-bottom: 3px solid #ff8d30;
+    border-left: 3px solid #ff8d30;
+
     transform: rotate(-45deg);
   }
 
   &::before {
     position: absolute;
     z-index: 2;
-    content: "";
+
+
     display: block;
     width: 94px;
     height: 94px;
+
     border-radius: 50%;
     border-top: 3px solid transparent;
-    border-left: 3px solid #ff8d30;
     border-right: 3px solid #ff8d30;
     border-bottom: 3px solid #ff8d30;
+    border-left: 3px solid #ff8d30;
+
+    content: "";
   }
 
   @include font-param(700, 38px, $BloggerSans, 0, 38px);
@@ -70,9 +73,11 @@
 }
 
 .personal-info__text-level {
-  @include font-param(400, 18px, $BloggerSans, 0, 22px);
-  border-top: 1px solid #cbced9;
   padding-top: 3px;
+
+  @include font-param(400, 18px, $BloggerSans, 0, 22px);
+
+  border-top: 1px solid #cbced9;
 }
 
 .personal-info__photo {
@@ -82,17 +87,20 @@
 .personal-info__photo-lvl-wraper {
   display: flex;
   justify-content: space-around;
+
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .personal-info__change-photo-button {
   display: block;
-  box-sizing: border-box;
   width: 270px;
+
+  box-sizing: border-box;
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+
   border-radius: 20px;
 
   @include font-param(700, 17px, $BloggerSans, 0, 30px);
@@ -106,23 +114,26 @@
 
 .presonal-info__hashtags {
   position: relative;
+
   margin-top: 35px;
   margin-bottom: 0;
   padding: 25px;
-  border: 1px solid #cbced9;
+
+  border: 1px solid $gray-blue;
   border-radius: 10px;
 
   @include font-param(400, 16px, $BloggerSans, 0, 22px);
-  color: #444444;
+  color: $light-black;
 }
 
 .personal-info__group-title {
   position: absolute;
   top: -10px;
   left: 50%;
+
   margin-left: -15%;
-  padding-left: 16px;
   padding-right: 16px;
+  padding-left: 16px;
 
   background-color: $light-blue;
 
@@ -135,23 +146,26 @@
   position: relative;
 
   width: 270px;
+
   margin-top: 25px;
-  border: 1px solid #cbced9;
+
+  border: 1px solid $gray-blue;
   border-radius: 10px;
 }
 
 .personal-info__transports-list {
-  list-style-type: none;
   display: flex;
   justify-content: center;
+
   padding-left: 0;
+
+  list-style-type: none;
 }
 
 @media (min-width: $tablets-width) {
   .personal-info {
     justify-content: space-between;
 
-    margin-top: -60px;
     padding-top: 125px;
     padding-right: 75px;
     padding-bottom: 120px;

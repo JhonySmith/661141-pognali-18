@@ -1,13 +1,6 @@
 .companions {
-  z-index: $z-position - 2;
-
   box-sizing: border-box;
-  margin-top: -30px;
   padding: 70px 25px 30px 25px;
-}
-
-.companions--bg-color {
-  background-color: $dark-blue;
 }
 
 .companions__title {
@@ -227,7 +220,6 @@
 
 @media (min-width: $tablets-width) {
   .companions {
-    margin-top: -60px;
     padding: 150px 75px 40px 75px;
   }
 

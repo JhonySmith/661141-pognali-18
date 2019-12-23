@@ -1,15 +1,10 @@
 .add-plan {
   box-sizing: border-box;
-  z-index: $z-position + 1;
-  margin-top: -30px;
+
   padding-top: 25px;
   padding-right: 25px;
   padding-bottom: 45px;
   padding-left: 25px;
-}
-
-.add-plan--bg-color {
-  background-color: #edeff6;
 }
 
 .add-plan__list {
@@ -216,7 +211,6 @@
 
 @media (min-width: $tablets-width) {
   .add-plan {
-    margin-top: -30px;
     padding-right: 75px;
     padding-left: 75px;
 
@@ -267,5 +261,16 @@
   .add-plan__navigate-buttons {
     display: flex;
     justify-content: space-between;
+  }
+
+  .add-plan__form--entertainment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-plan__area-label {
+    margin-bottom: 40px;
+
+    @include font-param(700, 30px, $BloggerSans, 0, 18px);
   }
 }

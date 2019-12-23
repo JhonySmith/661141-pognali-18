@@ -4,6 +4,13 @@
 }
 
 .companions-cards__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  width: 270px;
+
   padding-top: 15px;
   padding-bottom: 25px;
   padding-left: 18px;
@@ -13,7 +20,13 @@
   border-radius: 25px;
 }
 
+.companions-cards__card-wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .companions-cards__fio {
+  width: 90px;
   margin: 0;
 
   @include font-param(700, 20px, $BloggerSans, 0, 20px);
@@ -120,4 +133,147 @@
 
 .companions-cards__lvl-title {
   top: -8px;
+}
+
+.companions-cards__block--mobile-hidden {
+  display: none;
+}
+
+@media (min-width: $tablets-width) {
+  .companions-cards__item {
+    flex-direction: row;
+
+    width: 688px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+  }
+
+  .companions-cards__block--mobile-hidden {
+    display: flex;
+  }
+
+  .companions-cards__card-wraper {
+    flex-direction: column;
+    width: 479px;
+    height: 190px;
+  }
+
+  .companions-cards__flex-container {
+    order: 1;
+
+    flex-direction: column;
+
+    width: 70px;
+  }
+
+  .companions-cards__visit-list-wraper {
+    order: 2;
+    width: 100%;
+  }
+
+  .companions-cards__tranports-list {
+    flex-direction: column;
+    border: none;
+  }
+
+  .companions-cards__visit-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .companions-cards__button-call {
+    box-sizing: border-box;
+    width: 148px;
+
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 25px;
+
+    @include font-param(700, 20px, $BloggerSans, 0, 30px);
+  }
+
+  .companions-cards__likes {
+    display: flex;
+    align-items: center;
+
+    @include font-param(700, 20px, $BloggerSans, 0, 30px);
+  }
+
+  .companions-cards__photo {
+    border-radius: 20px;
+  }
+
+  .companions-cards__fio {
+    width: 220px;
+
+    @include font-param(700, 30px, $BloggerSans, 0, 30px);
+  }
+
+  .companions-cards__hashtags {
+    width: 230px;
+
+    @include font-param(400, 20px, $BloggerSans, 0 ,24px);
+  }
+
+  .companions-cards__lvl-wraper {
+    border: none;
+  }
+
+  .tablets-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companions-cards__item {
+    padding: 0;
+    width: 950px;
+    height: 285px;
+    flex-direction: column;
+  }
+
+  .companions-cards__fio {
+    padding-top: 50px;
+  }
+
+  .companions-cards__photo {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .companions-cards__card-wraper {
+    height: 285px;
+    width: 630px;
+  }
+
+  .companions-cards__flex-container {
+    order: 2;
+
+    flex-direction: row;
+
+    width: 235px;
+  }
+
+  .companions-cards__visit-list-wraper {
+    width: 165px;
+    padding-top: 50px;
+    order: 1;
+  }
+
+  .companions-cards__visit-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .companions-cards__tranports-list {
+    flex-direction: row;
+  }
+
+  .compnions-cards--desktop-hidden {
+    display: none;
+  }
 }
